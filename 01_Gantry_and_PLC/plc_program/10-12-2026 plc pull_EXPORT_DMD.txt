@@ -1,0 +1,5333 @@
+// Options: Export entire program; Code Block delimiter instructions;
+// Formatted Rung Comments; Element Documentation Database w/Flags;
+// System Configuration; Memory Configuration/Devices with Built-In Types and User Add-Ons;
+// use Element names (no NickNames); rung/address annotations;
+// <TAB> parameter delimiter; 
+// Write/overwrite file C:\Users\Kate\OneDrive - University of Idaho\2026 Fall Semester\CS_5020 - Gantry Directed Study\latest plc code\10-12-2026 plc pull_EXPORT_DMD.txt
+
+PLC BX-DM1E-36ER3-D
+
+// Do not modify SYS_CONFIG block!
+
+#BEGIN SYS_CONFIG
+e18e3cc6dc0a46a8a326befa1727a5e3f2c7ce7e24cc16676d9ffda8130d96578db044e41775eb05
+afa6e070cbfa8369f32148ed2581e24bb5b4dec5f4b81f4d7eaa84c33468d82c4bfb89ef09696ffb
+14d53abc007d53224fe570b400a4744ee38ab5f1347aa504803da9f5469a620074cf4324b7ae50ee
+c670746945771ab7f1fa175a1cb3256cc9b01313ef7280a510b624127ec7e53db1540d4eec069bb2
+dc7e09e21663ab5e4bb1888f9b57c4b68a55c12c54ed946313a7f0c375147e955d17837418a6d9f0
+196c85c4fc044be7ec438c8145057d246daccf180384c9e6a8bc7e5a062eddf41ceb6bf007a6f8ca
+6a55f4e21bc61f44ff41ef50620d563215cf0357959aa071ae62c9fd6eefaaefb58023760cee7dd4
+705c99fe8dbafc36c10769f7a3327c2102f2aa5a0e6075d7104ec10cee75007d35d32d357682cbce
+98d2d5a51080890c1fc9787e034bf2f28a729ac0cc64cfc30ffb4e92dac9af97fdb28ce85f1d1cdb
+f8b93c7265dcf3820265c188545365d01169a0b30d77e30f5c3b4a68acddadb5398a017eeb7ef634
+7b5eb4c933b3d0a26ad3d658bdf0ff56c3be35f511e4aa6a253d0467d5fc390071af3bf5e0c1c928
+bc0c47a40c8152a884d9278709ad98ecab98de080ff03a91c509c8be2f731dbd6873aa95d6a66cd2
+3aef3aa28c42f7cf312fd302693ff437a0e8bad06c9f28d5954f1367ad572d5163418520896394f2
+3a3f038068f734611efd99ea0a72489016f61326152b241f8df8c9d3973ce6d5ed936638d4679b08
+11dd28784178efd51e73dac63f362329a8694753aae70dce6556910e5d872e952cb12eb4bec16173
+fd2801d05d5ffa894e8fb29966735736176e8a470021dc1a9e47164326b92c7c8c169d0dc9072297
+6c31e7d6659d5ba6206254ce50ac90b21aa1397f8cc81cdb3582ab07222cf28def3154ff255e5a44
+c9b1b56e4b938ea76e4b8cb7eeb34fbb7d0786b6b992b0354fbe3a866a9053a181d233790cf21d3b
+e141a2657fb573cf8e6e76594e6839492a183e3dc82f47ecc2319b155ae7ffa9a0aeb9975a194cd5
+3cdb89cf1aa065a50ecfb87196ae4d072b55a078ce286ba71d0bc5fd0d12f90809298d091e3612f7
+cc650b5922ae66858423720f9cdef76a7dc05717d0cbee5cccb5e2f6d0beb59c5b7f194aef0894db
+8d58029ecc8fd70a1a42274865cb7ed1bd3f018445554c8cb5829f45aac3d1c6ef1f4201f7a9424f
+e38461110e8c6a59f0eab097eb2a54437851986d2dc4f0d5066da1fdf419f9897b61418dfa43234b
+c453f7bb8548bc42cef57e107290eadd0acef24d6a65c9f95b32bbf2f52fb05a6ada55cbc45145e6
+d314b27174436795812f41da94a79014dfea2781e517e89d65b9264de7275739afc9f4de1ef1f1f5
+bb505cc163428a12dcf9ad9741ff1b04a56948bc7c94bc18fe00674f55b879330d6b435e47fc7323
+3494be692b4d313f077807583005011bcc9a037f7fb91b291ee62283eb271ac57998989e9e032ec1
+f337ae30c1cee734587dfa57877947772d7d87ad528d52ba15da451a0fe5f5435f6928d4d35923ec
+b3c10fa16e0c4f74190f3ae851c234be874ef3ab5aa5d7f7b088fafc3d1aa62df73d9a95284cada4
+27ec2f4659dcb3357c79ca7eef24396f49d016a8c2f74a222df8aeb599b69814fe0a872b91e46c8b
+87da29d91efb6a6c82d7e5c365c245a6778bc539aaf5ceb854a24501320a9d012ffe6b1cffb99c24
+642405fe50af45aac17665a0a80f2b4e8f6abb37142d0834646bcad6b21d15cde9921f09c5181649
+617a1c992fb3b57d34c9894548a97516112a2faa653f09bb6239ec44fd979524b304a542664f9c56
+14b92666d457cd59e5cb74bb5ed2fe70c49096bb27cbf71f44ae9e93708fd75e0e44c48ee567d387
+f79cbbc783beaeda618db0db48af242744d2f3711301738ddc11e9be65515062753c986b3ae656a0
+c9a73ee748036c8456f5e64f5db497e88c5cc9f3ca1990f19c856df57e07d5de9c3a9644c3b73d06
+c0b092871eccac4ac8dac96fa2096440d36021166b7bc5ab693654219216afc418a8a7cf702df397
+9d3f058c406c79cda7df11e317d748ea86c6837cf0133d59334e870219a661ddffb3a98fc64e6b4d
+785d729ee10ef8d6faa859d2668b095ce6b1aa794660407e7dd384d85f10e326997b18770a4abeed
+b6a4a196cae8f5d19892c2d2003287a9c9bc3f658a373ad5d715044699abbcc7090cb20ac468bbce
+19e359aa798b8f3f906bae5232d275a3c837261684550625de03807f53d34777b7e001ebc6407967
+4765c1da176350002f30865919f26f2bd3a7503b37238322d337bab5aa0881fb088a08301ea8adb1
+014ea960fb0a170c2b262f978ce3543412504775cea05356a825ead4e2ffc5938fff3ad57ad94e99
+3ced658c6bd4a678178a801aa1ff6f33ae89319b5767924e61ae035be8bd636a70fa98cfa470204b
+627f50dc91a4eb736b172b3da185aca47c43d3ebeb2b9bbf901c0d2221aabb8e33688774f28877c9
+b879f003c341e7df8791efe5d1c1935aa9e78663e1bb54894f22d8f1dcf6fade0d29400520830cfc
+9e33e572ba4d6f4cb3a34136d3114ba2dff192a4163d0f7bbe0cb1e27c5f2dd81ef834eccca52f49
+6aa0158fe30c95732ac0dd3f117075b96641d6a59ad861d489c960566cab8659022081eef9479290
+f61d730a8f83ca25a773ca328c548993454a156a0b2afd801525b317e1e86beb5ef7f31e17f31440
+afa41c2b548cac7d490c3912513df9104b53b278624650928782fb4f7fbbceacd83409ab6b93eb67
+3faf3175d64758433e723fa6ee33dbd33d0b8b2c4fc4e427c0533d4a66bd0be6803b541148e7d91f
+20f62af41b2930561a4646ddf291f7c9675bf944ef28a341f8bc26dd3893c16e05892eca3595ca56
+a2768e412d69ebaf45b643a63f7cc964f1d6ec7d7e5396a1692e61e8645fba67da2f67fc5a0ef4b9
+f944fa7b9f4ada82b76e8bb6281bab5e5481c176b724d809d74d0a608aa79e3c6711885aec7f9e1b
+a5714a571cfb32afd317c4b5828db677a68019c4253a3975a646a0d08ccea92c3ddbb9189b7654aa
+54c35d40238b1d05f1b5dac79a2fae325a500b6a7901f8e57ac4f9b2af6ceb1d08fddaddcafc72e7
+3fbfff615417ca6a2b0fdaa06fb0436e15995fd24de6b30fc0ff637d24db0fac8faace8259dcb2bc
+3eeaac3b0791cbe21604b4fe65c00a3885aec19ef04007d803d30ee1d22e4e99f2290cb17287b456
+0d0123f37d4d26bf96a7c055325b10bfe9c1fd0545121d957219f2efbf80e8bf609625e5c4d39427
+510f125d75166a33f9849a236542c37c9b9df55e5c9210e79e40863948a7133fbaaf5506b8f21702
+0a989fdde6cdf6cf59285a02bf20430db8fb329035caf059079de00246c30beed2da2451847e1487
+60eb9ce2b76c4754285ae445bfd8384a910d3a6adcf044128ba79dd95f113fc96cea22cac4aab5cd
+1b0cabecdc04a50d1e8e3eb53b1548de1e5a380044d896b0c9eadff994b032049e6da8ef927eecf3
+0dac34b939151092be5b7b08ea580e6d6a8655962f75afcbe379f2fd5fe12f879e85f9308b6df783
+6c3ebc46db205324d03a0e40c623b7f61ac6e680d7b113e0426bc6b709a63b7f4924c3fa0ebc45d9
+e19107ccc5ac595ac556f9415775ba1748fe518d3f5525643eb092754cb8922a7dee91abccc48a09
+f36ec537fb60603b7be5c67163f05f9fc8e916704c1deca0d051cd47bc3824af50e2276b337496ba
+8f0d21c4bc4da9114724e30ceb58a9aa87fcceba4ba195bb32cd6322ce1219af946a325adb77716f
+ac639be66858546eb1a890d4450b2d5409ecc2bf0193178451f63b96c97fd78bf947e875227caaeb
+2c3efac0e9d0fceb803afbfabce9765ec114832a6d5d45ea3690fa8a4b1a2c7a3bfcee867f635f2f
+b9727d94386465f6598197ddbb19eaf059126bd57ae7bf89a21650d796cf7ea022d58f84baae9f85
+2b8ff5e068d26223317d851591c214438c217e48ec44559659a1002e2b2486be0c6dc44c85eba372
+72e250039cb4eb3e0472e10e8a3e9612246a07537d983e0b782d100e17051d48c7c38d6b57db627c
+723d174876a1891cacf79bc4895c15f3fbd25361233b5c908f8fba8ae7956ab76d7db853d40e1df9
+99ab41e4324d2a242de1c8f546c5746074e178b23092fa7c8eaf3f5fd126a19e7f237a746c565b84
+2137a9c3bee7d2cd88c9e4ace9301ba21d0e75c35c30f2f1833b2b77443a2f9355eee112091859a7
+653f134f25d840593a81ba2611f0de7f78220d9cd446697e567b8001223159b36b07b8f7cfd41d3f
+dd961fb4c57d10cd100473fd88e2fc2473a25e192d359a068b1989023ab4b03c0978cdf4f0abbce4
+b13e3b9510f8a3c6ec8ac92e83de68c35fa535136afe35345dedc69fd0abb00d4b03d0f0661744ff
+2448f7bea605e0f90d9f668a8319e4414815654e1758c3dafae7c8d7e9ce647fa3dd7256b6616137
+5a9291fa5221fe39243c8fa9aeb4c0517e56e790580111eb4589d209c639fb376b99adde2fe83425
+a4d034a929ccf40883aa0506e133f48c99b03f9711f21522ab93f07ed8c086eca6a4f806566e02b8
+c156ee69d716dbf2c4185efcd499c22877aae17519b06e82d2f624e37b3188f8ef1c2062df8bbb45
+8b127c952d2624da0a167cf367224eda6dbb59ff8f27e166817a90dbf85f95b03eaf32835d737473
+ee4f33555a4b699b576f79e0d785a27f731652267875a2250146144390b15714ba7eade260d82de4
+de9b481f2558b5ed8a12d0c2749f1dd9ca607886d9e067f0935abf4d803f31968e398c521369a849
+f8d8c11f075c21e252805b3c07d46ef97b190eedeb30e8b0aba4a4f20a86c26dd87579d7180c47c9
+58bb466f08be4297aca1e23f656505014719b95ff0e1a0df1ac9a445a4719c3f156c0cd900b5d5dc
+adbec115c89934ae64d332e7fcf0b36e343454302095ca227662f54cb57d809d9fff7e266c72f036
+5cfff9d4c8834b3093306cfc1a2e5f22c9b656b3075694918f4f388ee38dd4dcdcc9c6d04923a00e
+6794cea7cf8fc1b3e234fd5667edfb1bd76527b0c1dd9d28ced1500f67f11bc1b31904a53c3b4427
+759e479f713426d0bac4115a374d1c5f4b100ffcfb44fcee9eff16d4a4a5931e95431144634adc46
+71f24a21cfd528749050c11d9ff743ecc7eee5525360f41c24f60c5d017867b1a2590656e8a3ac81
+60148407145b6e05f83c55c25dc1ed578181e53bf13c688162781f548a3129967640492fa985116a
+97062d5325adb11a61007027572c0ce6cc36af6cedd199333521adb2ca6dffbbe7f8fe49f8bde897
+291a15b2805cdd14daec8514bf53a20049e3f5d6c9a417d06b7398530b95918300591ea4696bd2ce
+1c2a2ad513405435dfe91effee435033840f0efcbf3a1fe099f6d703ce9a1a68efa676f0a92d1825
+8d7cb9480806581a23e088949177c8b0f263ea6fa67a94200a64ebccf43136a41ba2d04b5bf39939
+ba54d3d82973b7647cca546f3d2fe9308649d8918067505b5a3bb798e2ba31d96530b6a388bb293b
+f09167c3c2fed42d551e3cc3c2fcde396bbc94b50b5648e7bdbabf1b526a675da680851cbe9f87af
+279ca987e97301db5cb175f0bad8b5751a16800f608c1fc0151a79553c3537ea2f3c1963c6f7e7f3
+20cba1299a04a8bea257ce637c11705834b8e7ced3a8f1b675edbebfd99db97f9b9342631b39b4aa
+65fd6311fb770e3e00700baf6e72c095fee62033fd4a8d1e87d2b3718020d54ffca595dd3f4925e8
+aa2432a7c6edf026aa871b26de922499ea563c825dd282b1e26540b002480207c77b85c00d4669b1
+47834e40ba456bd642282cbd85aab704c66337d768ca8a0bc0f078221a69a2d1f2f38542f68e4653
+7ffa995c672072005c4f15b29d2082016772b13b5aca3a9c984a7e9c5213890ceadb42bdd6d9ec3b
+cfedfc8ef60d15f999c5f45c04865ab38170c23d0fe4d1af09cd7a35e38d7b9c53076eec60f1ee44
+367e997944e3e11e1336da5844620ba7e5cceb2299433527e88a41c766c01b98b8dd176c727ddf71
+df02621c0f0af77c221ab6e759b3e5b5584fd5844ee4b55d24d51141df7772a4613f509ea984f1f3
+a0ae8b5ed53574331509cace0fa479f21a60bf7862196acd50c8c385fb1a11fe45134a81f8b06f6b
+319c50c1bddefec628f9878f4b7077ec9f9e93e25c624c365acda8a002078fecf287693f5b4b2ec4
+3f8cefa4382683c44736aacebc636c233ac78f13083e255ac029c4287465abb3ee4bb92548962778
+e3c6c30fbc03df8aece8b16cadd7c0a4e082cb47ac60da31e6d1fa97497e2fdf5bc36a110f9d568d
+addd9b8b47c57e6c34e615af3828ae2cc4fcaa029575057613adfa9c064d55e4a2e374c2b9177663
+4eb9adcb98efeb8acfea022e7f00ddc1571940ddfed6894052465c4634d1db5491133201349ef0ff
+94decc0dbaae41fb41f4b4e3a2d6293943c33bd58e614cb0328a75b6efd259e76cafb99c63336df6
+be9b7bea89c301006b7a385c4fa3df21acb8caf6b5626fc643d68c62203a1790e4d972ecc6e3876c
+3d724aab9e63b57d40857da5021d9117120b228c258ce397d37b4be1a92510c48408ffdc05fecb63
+f8b1bf42f385dbd5deb2bf37d49f333588f9e67c5fb34d8bdd3f69089067c5933d219180a55aa848
+ed45a3f6a15da8de9136e7eb3cd3baf094997a3476f446288432c1397cd0c47d0c88cc17fcd7070f
+da13401e406b0752d3eb42b59487166453e2a98273685e38b322272173ed003c38dac3ee1aa180cc
+1a648efd4a6fd8f97f951719da23cf2a45f817c7a2c6f09bbdff68c07324de5a721d828441e5f626
+060ff19ed066584666794aac8e35c6f4a0664d1bcaf0a34cf6fe96c6704c54f948c1f9720de25b1d
+a1c7d1ab0efb0d7cd620e2eac44c27c80daa23bffeb1a17da1059ec2b799891d4ae2692a6093f3de
+5224cfe5c7636ff52f4a7f17cf8eb890d93a39e3245338f877f4371c212951871d8d87469ac1e1fb
+5119e574fd716691e5004ba2fd4a056656a4eecaccb2af5af9e8f0ac969a8d392af881d38c416376
+fbd787f66679eb25dd113ca99eb67a4194f3dd854c9cc6887ecd5a886267a9f230e488e2c45792c7
+24dab6969705b09c88acaa38c9145aac3b48a9f9a767dcd901b20e658e530005783eacbe2c76b9cd
+23f7a8700ca379634d12e87d3047fdbb6df0c3665bda16dc13b68065ea60190066ae7c79e9f24f3e
+69435c78be0916fc25415eb0552b58c004575a64f82d36911680d88cc53be8515b55a322d0058c51
+67ac21b435b9c3a7ad80078319d03c73a4e6708191d43775fb841929ccc1ea1e3342fb89c2103633
+f1cb03fedbff3fa9d702a00f81fa79d1dd7089cea11136bb3e39d631178fdcaad50db99918402e97
+f2095e18e9e614b8fee5205aa37e13e2deab345b8fb42f38757294e7961f2ee000165cb01bfa4fcc
+73b6620c9126041e239e509d7ca0f10075fda159ac365ada63b777a4e1cb056a89129fc0ce28a14f
+d755b665a95d37935d60aea48b09a8de1d9fbecaa9c3efb256b896e10ff6c156d811a7827224d92d
+1e868b665a7f94b7953c43a9dd77f5065b808222fb1c099d6aced3c52a580548262a3090373c518c
+295ee0f20c43ecf8aed3d3b186417bb352ed78374faa1999b30b2b74ae5a54f5a61e3ced03a6fc63
+4c6c45f81f3091bfc5d05a5d07bebafa824cdf95db7efadc3ecf3bcab9a2fb9e2af325191946069e
+dee03a9d81400da72336e125b20962e57fd4a3a59aee458f41d0dc4ecf2c1c1ac104d777719e68fa
+968d96ea36230db1e2a189ce9958ebc7f12a20df4cb853a239035d6650cecc03f7a5fb7e8d81da29
+e12b83271a02bdcba635a2190956046f74a1967a2cb634d8a0e1965eaf7ff71f8b4ad28c791bdec5
+c53af71d37ed9a3aad0a8600af02d89c9db6dba1bdd5c428247837e99f1617d6db34f60e8313f650
+e62ba0e7528ed17129dea5782b78bd13c4b2bfb79365699fb13ec49dcf265b24e34ae1389ce2e5de
+4f3413eca9ad62139bdffbd5757059344e5c829176b561027094307320120f2b42fd399e62c6b203
+3d9661f3570dd9ac34fd97f2aac154e8fb202be914e2f6a109295a3073674bfd3ccc1c03a7fa6a26
+abdd60443402d96700a4e60f20b9cd4f2f1af6a9d742dc40fbbaa266a24af3f3939a15b0b32a1408
+45eb8ad6de583ba9a2045a2d036bdc6ed8f38667491a4b21ba43aa5bf5cf41e6444275aa8d75851a
+99ac33dbf9fe27cd85793117f8e4818eaf1a990d8b8bf295e778e6206d408c6219338c5a811d0bac
+e64e12ca2e48a159f4a3c6971abf5ecdd0c126a870c608f4e4dda93e2aa3f0c175bc271b97589b84
+4aeb819698c3266ebcfb0b519c14ba5eec395e26827b1dc1dc129d6e86e825888a377e7f864964e5
+66dbb9213342be7b1f291267b805a971f6d3255a9db0a8605be775c095bebcd69abd7d800e1b7eaa
+ae7c972a1ce5e0efc7bdf5b83c01a1af80f5f58628bc1c3b1268e59a4220f3c9b8b0643b04bad856
+c0688a836b11c751182260964e0b13cccd4afcac6353fc2c5394f5b9e9661ce0a17cae92b589cbee
+99224da74399511730032d88584b4491f25c78ca7751ece8973ecdc6f1b8f51debec4207f39f3724
+47bdffd61a940a8f866b975cd49111eb25c5382b9054ea66e1b9db35187189e83b66010981adf7c1
+651916e470ffd1ac4a33a97c490b0a50f9f4106267bb30689125861f4e0fcd66a4479363e5fa1378
+2c94b6860cd7ecc88043d38e3164de06fccfa5cbc8a80256250ec355b7c788333529968337dc650c
+73fed600679fd861e2d2c9bee44ed106cc2c9aa158cb266d66c8ec07a80f08566836f83ffdb05b20
+e9dd03741126bb5453abfa49126737ca8c2572cf082a9782042acf1da2ed74725d0627a982cb8fc2
+203fc19e9170caa9e40f268563f0694d72f6cde1b1f2f98e6568e9ff03957925c00a9b2802a0bccf
+346b9cfe454c94adfcf39ce2cede923dc1bb111a0cc5d67e4902d762fa45321ef46a0f999cca28e1
+40881d398a72673ec8c2c5c6281ce4265a60b9e6b15e44dbef1399edb91d6a7336752630dd0083a9
+6d3ab3495625183b701fe84d329a2b0392ae3df48a1bd41902173fc89b42ba9c13ddc0c0d5faa52a
+bd25e98bc1a0454b292b533cca2ab345b3883d89a8841378e306e0cac82da646e3a39421c4895743
+9b0186a2cb155d7258cc35a8053980371d30c2fcbcfda4b5353453916fbea9e8bd02e1156aaa85e1
+ada543bfa96f4d611775006d601a8b63c89bf0cfb6087d744c382940ecd35ed440807f86a8b08038
+3ab4c19c7d8a16e9425c3126eb98762edb28e1d821154f955332168b499549644ac1bed75416f51f
+1d13af0252adda90118a5b19eef8ee0ecbe9dfe129662470fdaa2680cfc71e0317583e5d8201409f
+d64fb446538f442576ad59d9abbdef3e08ef9fee73a82931cc2860a9add3e34e77217fb0d37b1bc4
+5516f102caa8a1232dcd464de8cc755f4ba2d64e166bd6b621d8e9cb6950dd360012cf3f78a33822
+70956b4bc8854b0b4df3c5247ef929e627302078489509ec712b51f8768e7c0db29da613133c9dcc
+a0f6d8b714451048beb5d226c3d5f1b05c23efcab7a44f28325c88e81e36b996c77e590ca54dd885
+8e702d122ce0632e58f3b359d1c4234e6e40ed6627117ccf41fa09995a25636ac06dfede542f9cae
+5f708d6fc4736d2329cc9c6c097b0cf7a533837e155ed384efa94ed203143d6bc1d6f8e540cef2a9
+890b6e0ad925146eafe851d4b3bea222ea32b4b0f1fb0639707feae42abc1fb670e0153331288818
+7af46d513b168c431501acf2fc2a25d7b817d31bb826eeed0ffc69431e64b25a8ced8baea5239393
+e2ef97e21aa67d56198683fd77243a61c1b196714e6423e3063cb575ebf5532d45b3a55b709e0691
+68aede958c0ba432052f1e1cb8ea27ee4dd8c602a3ecde2396ef4197d9a20f099c85b389a8b841ed
+46999ab852b42952bbe6b6bbc766d38ad8d886973d6fcdec62e805293edb8974d828a91e75c72111
+2a9ed7b714bbd26b40c4bfe3ade6bfe53f661981e87020b8c7098200071666e95230527fc95477ab
+38009a11f87d92dc737434211be5fee5ad8c869c5fc75cbca39ae6c2f7d386824c75ec74bf0bff59
+ccb3628e1f23a5bcefe5977efb6b788cf346e28ad700b1943e9cd7706c8ba0e49c2fbf0436adc6e1
+b93272c05db4634076168f00cebf1df97068313993a4d6b6f8bfe4ffdb7df37deb96a7e964c8cb93
+8cbb510a6bdb18813694f07d28d1ed532017edc28a861b00ca9c85e7efdd51dd07aa9024c718a652
+d7aadc43e44ff2903cb8201c7a448cc7b5da0a5e2697383997151db231e381f467d5f67fc5f431fe
+21d9c21f84fc99486831756d4681c03ea26f8a50f6062c52ac056849ddb09945c08baf8743c16985
+4ba0aafe785dd5660ac32cee2d5b6972b7f917ae597c3ed2713e527686b9272995fb9d64bacfa820
+38eaa77c9ff1d07f81cb09576e852a57687612f7bc12e4695149ed738526bb102e6fab3b38add87a
+1b59ab858932236b8f76c5fdd10561df88a7e5e9a1e9da51204598802aec7b189afd8af3806d8935
+3f285eb91cb865e477da313e093614bee8a7cb5c48d0a9e8845ff94559be4a67c085f37e88e24c72
+a9ba51381de4a1b4e0dd13f7dbdfd180f486f82516ba8e081aca606fcc3779dcee2f290e917ecdcb
+42c0d6905a26f9269409a26d64da0fde60e2321e060d91810b3276eb3b59a34c46adb81636562103
+d2e2c6cd1a62a7b93f37cc0f89fc7284b445744381400d2e5eaf6f0b6108952fff47ff58dc5d6858
+ef0fd5aef51d7ccc6abf6347fadaa5af2a9482e0f81fa9df92f5073ee2b91e2281df14787ad66225
+5d6eb0643432517a46ef1dd5606fb3a97e8acd1ddd758da4a104dabec2811029a1d9cef658b0fe64
+4b8fa45927569dcbc1fe9c34b72a4ce786bd6965dcc129d90642c95afc3d752178d1e3e6ad001972
+4ff6dca07f0d44e40f10a531f33d1d8f6b7f8f8b392b6e155ffd167e7b516e94b180220ed05d9c77
+dffaa5ef5f8fca5ad3476823ac6e3a7e68158aa37d6b066c5454e0c6bb1d256b22938e3a07fbafdb
+0c93316b0a427aafc0d8d8cfb0742df069878733265bfcd50b5da8657660d0685381602da87894ff
+6c38c13279da8d46819eaa91869cc210a7b2e204af07f2e6fb1bc70c2d00415efdb8ffe18b837935
+397d43d95faf95e2a1ab8b664df042bd2673bdea66009df3506103d7c97524f310a04d6f8514c4a7
+dec5e1e7e9b1c6717183097c89247351ee3b0293e20e6d95b23c49a2b73a2510294f78c3529b0a39
+da57f3d1fcf09db99164c1d244ae0c3725d5574093382aff0f40a09213f92fdf27ea4a0e7d15c927
+eca2554d2a90d50f9fab4acff6435eaafe3209cd468de81b5ca297ce9ac8b6f57741ce3124c055ed
+e28c22a67a31bad164747c04b44f41c34f4d6efa717a39bbd1d83d38e1924d69e63a04f43e3419fc
+db209244c04b75118ff33cbf089b6d51e7e5c5ebb645ffbe4fb0e3fff7c4fe2518b3d444bf93cfc4
+1abe3861254744a75c35b3743d1b2cde4f9c05aede9f914f18a316f2470e31c32384504a3e902cfd
+081c14325e84714162ccc6245d605b4246a794b00d19ac2610e94e2e9f7e25892178849576b8d569
+8cd4dfed1d1564b5b75866ab56636a393d7eaa35f4b904a89d4e98f2411201efedbf77878b3f651e
+c0fac86b06fb5ebe84b74b92820ca9d5ea5865c9334f4e25f319d60f0b78919b7311ea316d997fe6
+87acf4b98bf53261d0bde6e36fb540008ed1cf6ac93d6999acc16ef4e37c4d0f1f2c20bdd9673d43
+06ff6eb928c2add0beb6748c33079a1ed46f6fe7e365ee103a41f224a2a187977392af46ff8d2d63
+93c0b2fe9bdf36cdae43cd0ef9bf76a785ed0ba9c648682f45d90336bf283202340f9dad6ab09a7a
+8adf3bdecd5bd51e10ddb020b632d5bcb5e170f4172fecbc04430521327584ebbecdda0ed431ed8e
+2f520803b880f71b85c644e9252cc16f072512ede1c312de37728d1cf6ad51ea670fce3f1080dea1
+9bd723a0285ceda05e4cecfffbba60fe33c6fa380fe10bc2bd308e53b5aa01b3e5b10cda20f7901d
+1d2b0fdbdd18486bb13e95bf29248799abfe906ee3512f8c8c7b16155735ada45a8f6435d18ab67b
+f2a80cafa60a437e80e9f7ee91a47a5ed1476a44f1f4a7ead7f3da7148f9c6677a99904f7e3ed567
+67e8a6c53a2f2da38ec8c517f002012dbd9a0b3eccd92f5ca4924788959e8209eb830515bb489b90
+e58f7b7347611c1c7693fa7f093789baaa26b620c01a404bd5bcc9948e9da24b445eee25cc403727
+f57372777958afa458da753100342ba3d86e1e79492048cb6b44f6db95bf1fafd7ae9033e6073ad0
+dc60fa1655e84ea3c8f06be572797b93f9a739e836a7c4f850aab938cfb7d4b54e580a35b92da03e
+a3036fb066620a5228e984bddb9b99884e966c9295262542b2b230b4abbdaee1060b002cb809b887
+c736e8d3d23300595c9e35c598925dbf5e0f3c227601c9804b6021c56d4c9f27f4c7aabdf5803b34
+6271996227efc2bc0ff1b4867ef827d59ccbc33e57f257c72839549e5fca167ae6049431caf720ae
+690401f31d23927b8ef84e08760ab96951a2d7a592975adffcc7a8b66be6db46e694177d446b07b1
+70f824e8f42296f77e78495286fb7b9d75325fc7d6e0dcc3d403e30a44f5c05555647d0cd499bb1e
+affa4e92de7b60094c534f74212f517a14fc8e744da2aa1b0afa5d36ab0fcac43405a3aa3e5400f2
+adca625078794eeef4cc7ae55bc684912d77bb708a986a3c96473fc0812d14506a76dc5394b9f9d7
+5aaad5068d0e9b7a2dce4e268aa5227f757463c9a300dca4fc9f9f1b773c44afb1406c91ddd7f4a9
+8c8669db1f7a2ad59e101aaef3da00b3a8e665483e9fff9d48cb5e30ca44096ae544e0b18c243c15
+e920978c478f7dde6ce79ded3dcbe5117eac33d6fcb8663ed0d3371bfe2bb4da31e76ab27bf4c99c
+d4b2d38d9d544e46125cc8f20a9c8afa76bbc0a0eb164cb9991d0479f825fdfc4c7d5a985ccaedeb
+e6e008f85bd32c69090fd4e4a083bb8bfe9ea43e80e4cb1f3f093c0c223c71aa6609e842fbc3a6ac
+cb0ec18c43740caffaba85883097597443c843781b20ed7f3dec75180ab462352fa49f40dec52542
+757f9f032addb71845289d6ff4c69cf633822835c49e34cbcc6ed00218b052cc21a8abd095f4e47d
+be40ec7362814c2762bbda56f6d2694b7cc961419b5d34586a280ed7ebe464485bf79e49169c8962
+04c8b6615e55f35caa1433fb5d3e79174f9f029888b209c5e115c4a272174a9ead240417a2574bab
+613c7dfdfb591f8d77dc55fd52fb577189eda622c4e12aca734b3ef283e00e6e9b31aa330bd1397f
+7cff7afd823936fe9e8cace0f9fa9cef4238d46a94f63f7cdf147f6cff153dc347d8168a7f5e8381
+ea254c7b9d1a8f310899c93a7aa94628a19a8360553bb674a414fa6fed3d4863b99bd4a4bee98aa7
+4bda6b79c887c5c3f44e198c04086c4808978102260bde073c087896bece4d4996f1e8ecddabcb89
+cec61be7ba82a6aca9ea80c39c2ab102e80249b0ada8cad9ba62f748ad7fd2f293a224883d7adb5c
+117dee8ec9621c28485ba86829b30d9d621d3c3b601263ae23893a292e91b387a30ff71a77018d8c
+93ea7a5cad4bcfce5b1bb0451b03181d8e8bef3d17d4b8335becc0307e8e613b8d66d53f151fe6fb
+f99a89f62ebb7491432e7716473e19687c515444112e0cd2c8c2d7a24ffc3b4c15b4726585ba1ad4
+ffd102a524f842878e6798659dfea82cfb6e21e9c6dfc54f6fdd03fd277818dcb683ad0a50118763
+ae427dc6b986534d067dc4ab3176966b339142298d2294d30b1540100cd298212f692ba43f938a62
+4a35888690d77f8e2263a9ce391749e6b4c9dd493be1b0b9878eafbb5792b23eeb1aeb4d58d15545
+685bb54fd9bbdbb702f0eaeb05
+#END
+
+
+
+#BEGIN DEVICE
+	@LocalIOMaster, 12, 27
+	@RamFS, 1, 1
+	@SDCardFS, 25, 1
+	@UserLog, 7, 11
+	@IntEthernet, 4, 2
+	@DMLogger, 5, 10
+	@IntModTCPClient, 9, 14, 1000, 2, 60
+	@IntEIPClient, 22, 31, 1000, 2, 60
+	@IntEthDMPPClient, 23, 32, 50, 250, 2
+	@IntSerial, 10, 15
+	@POM, 24, 33
+	@Axis0, 30, 35
+	@Axis1, 31, 35
+	@Axis2, 32, 35
+	@Axis3, 33, 35
+	@HsCtrTmr1, 14, 29
+	@HSIO_001_Axis0, 28673, 35
+	@HSIO_001_Axis1, 29697, 35
+	@HSIO_001_Axis2, 30721, 35
+	@HSIO_001_Axis3, 31745, 35
+	@HSIO_001_CT1, 16385, 29
+	@HSIO_001_CT2, 17409, 29
+	@HSIO_002_Axis0, 28674, 35
+	@HSIO_002_Axis1, 29698, 35
+	@HSIO_002_Axis2, 30722, 35
+	@HSIO_002_Axis3, 31746, 35
+	@HSIO_003_Axis0, 28675, 35
+	@HSIO_003_Axis1, 29699, 35
+	@HSIO_003_Axis2, 30723, 35
+	@HSIO_003_Axis3, 31747, 35
+	@test_dav_mqtt, 32769, 36, 1, 30, , 3232236338, 1883, 4294967295, , , , 
+	@Gantry_Mod, 32770, 14, 1000, 2, 60
+	@HsCtrTmr2, 15, 29
+	@HSIO_003_CT1, 16387, 29
+	@HSIO_003_CT2, 17411, 29
+	@HSIO_003_CT3, 18435, 29
+	@HSIO_003_CT4, 19459, 29
+	@HSIO_002_PWM1, 24578, 34
+	@HSIO_002_PWM2, 25602, 34
+	@HSIO_002_PWM3, 26626, 34
+	@HSIO_002_PWM4, 27650, 34
+	@Gantry_Mod_Da, 32771, 14, 1000, 2, 60
+	@ModDavGant, 32772, 39
+	@Gantry_Dav_Smtp, 32773, 7, 4294967295, 587, 30000, onye6983@vandals.uidaho.edu, 0, 110, , , 0, smtp.mailgun.org
+#END
+
+#BEGIN UDT_CONFIG
+Gant
+// Field Name, Data Type, Memory Layout, Read/Write, Display Format, Data View Detail
+X1_Enc_X1, SDWORD, 0:0, Read-Write, Native, Short
+X2_Enc_X1, SDWORD, 1:0, Read-Write, Native, Short
+Y_Enc_X1, SDWORD, 2:0, Read-Write, Native, Short
+Z_Enc_X1, SDWORD, 3:0, Read-Write, Native, Short
+
+Axis
+// Field Name, Data Type, Memory Layout, Read/Write, Display Format, Data View Detail
+Y_Axis, SDWORD, 0:0, Read-Write, Native, Short
+X_Axis, SDWORD, 1:0, Read-Write, Native, Short
+
+Axis_Gnt
+// Field Name, Data Type, Memory Layout, Read/Write, Display Format, Data View Detail
+G_Axis, Axis, 0:0, Read-Write, Native, Short
+#END
+
+#BEGIN MEM_CONFIG
+	X	BIT	decimal	2048	-1
+	Y	BIT	decimal	2048	-1
+	WX	SWORD	decimal	256	-1
+	WY	SWORD	decimal	256	-1
+	C	BIT	decimal	2048
+	V	UWORD	decimal	4096
+	N	SWORD	decimal	4096
+	D	SDWORD	decimal	4096
+	R	REAL	decimal	4096
+	T	TIMER	decimal	256
+	CT	COUNTER	decimal	256
+	SS	STRING	decimal	128
+	SL	STRING	decimal	64
+	UDT	DATETIME	decimal	32
+	PL	UWORD	decimal	256
+	DLX	BIT	octal	01000	-1
+	DLY	BIT	octal	01000	-1
+	DLC	BIT	octal	01000
+	DLV	UWORD	octal	04000
+	MI	BIT	decimal	1024
+	MC	BIT	decimal	1024
+	MIR	SWORD	decimal	2048
+	MHR	SWORD	decimal	2048
+	RX	REAL	decimal	256	-1
+	RY	REAL	decimal	256	-1
+	GantEnc	Gant	decimal	256
+	YGnt	SDWORD	decimal	256
+	AxisBl	Axis	decimal	256
+	GntYAxisMmArr	SDWORD	decimal	256
+	GntXMmAxisArr	SDWORD	decimal	256
+	GntXOneCntArr	SDWORD	decimal	256
+	GntXTwoCntArr	SDWORD	decimal	256
+	MSG	STRING		0
+	ERR	STRING		0
+	SysName	STRING		0
+	SysDesc	STRING		0
+	SerialNum	STRING		0
+	PartNum	STRING		0
+	X1_Motor_Control	PID		0
+	recv_t	<Virtual>		0
+	Go_Home_Pose	<Virtual>		0
+	Test	<Virtual>		0
+	Z_axis	<Virtual>		0
+	X1_axis	<Virtual>		0
+	X2_axis	<Virtual>		0
+	Y_axis	<Virtual>		0
+	STG_INIT	PROGRAM		0	-1
+	SR_Read_Encoders	<Virtual>		0
+	Lights	<Virtual>		0
+	Notify_Alert	<Virtual>		0
+	Find_Home	PROGRAM		0	-1
+	Move_to_Position	<Virtual>		0
+	START_STG	PROGRAM		0	-1
+	HOME_STG	PROGRAM		0	-1
+	X1_Hom	<Virtual>		0
+	X2_Hom	<Virtual>		0
+	Y_Hom	<Virtual>		0
+	Z_Hom	<Virtual>		0
+	Read_Encoders	<Virtual>		0
+	Y_Calibration	<Virtual>		0
+	X_Calibration	<Virtual>		0
+	Z_Calibration	<Virtual>		0
+	RECV_STG	PROGRAM		0	-1
+	X_Mov	<Virtual>		0
+	Y_Mov	<Virtual>		0
+	Z_Mov	<Virtual>		0
+	True_Calib_STG	PROGRAM		0	-1
+	Reset_SR	<Virtual>		0
+	Z_Homm	<Virtual>		0
+	X1_Homm	<Virtual>		0
+	X2_Homm	<Virtual>		0
+	Y_Homm	<Virtual>		0
+	PICK_UP_STG	PROGRAM		0	-1
+	X_Movv	<Virtual>		0
+	Axis_Ranges_SR	<Virtual>		0
+	Scaling_SR	<Virtual>		0
+	Diagnostics_SR	<Virtual>		0
+	MOVE_STG	PROGRAM		0	-1
+	Z_Max_Thr	INTERRUPT		0
+	DROP_OFF_STG	PROGRAM		0	-1
+	X_Drp	<Virtual>		0
+	NewItem	Axis_Gnt		0
+	Coord_Map_SR	<Virtual>		0
+	Modb_SR	<Virtual>		0
+	PLC_States_SR	<Virtual>		0
+	Heartbeat_SR	<Virtual>		0
+	Y_Drp	<Virtual>		0
+#END
+
+// Beginning of Code Block Z_Max_Thr
+$INT	Z_Max_Thr
+
+// Rung Z_Max_Thr#1
+// Offset 0
+STRGE	$HSIO_003_CT4.Acc	9100
+OUTI	Y30
+RST	Y23
+
+// Rung Z_Max_Thr#2
+// Offset 6
+STR	Y30
+OUT	C137
+
+// End of Code Block Z_Max_Thr
+$INTEND	Z_Max_Thr
+
+// Beginning of Code Block recv_t
+$LGCMOD	recv_t
+
+// Rung recv_t#1
+// Offset 0
+STR	X1
+OUT	Y15
+
+// Rung recv_t#2
+// Offset 2
+NOP
+
+// Rung recv_t#3
+// Offset 3
+RET
+
+// End of Code Block recv_t
+$LGCEND	recv_t
+
+// Beginning of Code Block Go_Home_Pose
+$LGCMOD	Go_Home_Pose
+
+// Rung Go_Home_Pose#1
+// Offset 0
+#BEGIN FMT_COMMENT 
+"Home Routine with High Calibration Routine"
+#END
+
+NOP
+
+// Rung Go_Home_Pose#2
+// Offset 1
+STRGE	$HSIO_003_CT1.Acc	-5
+ORLE	$HSIO_003_CT1.Acc	5
+OUT	C40
+
+// Rung Go_Home_Pose#3
+// Offset 10
+STR	X8
+OUT	C41
+
+// Rung Go_Home_Pose#4
+// Offset 12
+STR	C30
+AND	C40
+AND	X8
+OUT	C42
+
+// Rung Go_Home_Pose#5
+// Offset 16
+STR	C42
+AND	C45
+OUT	C43
+
+// Rung Go_Home_Pose#6
+// Offset 19
+STR	C42
+AND	C46
+OUT	C44
+
+// Rung Go_Home_Pose#7
+// Offset 22
+STR	C42
+OUT	C36
+
+// Rung Go_Home_Pose#8
+// Offset 24
+STR	C888
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	1000	50
+
+// Rung Go_Home_Pose#9
+// Offset 39
+STR	X9
+OUT	C47
+
+// Rung Go_Home_Pose#10
+// Offset 41
+STRGE	$HSIO_003_CT3.Acc	-5
+ORLE	$HSIO_003_CT3.Acc	5
+OUT	C60
+
+// Rung Go_Home_Pose#11
+// Offset 50
+STR	X10
+OUT	C61
+
+// Rung Go_Home_Pose#12
+// Offset 52
+STRGE	$HSIO_003_CT4.Acc	-5
+ORLE	$HSIO_003_CT4.Acc	5
+OUT	C66
+
+// Rung Go_Home_Pose#13
+// Offset 61
+STR	X11
+OUT	C67
+
+// Rung Go_Home_Pose#14
+// Offset 63
+#BEGIN FMT_COMMENT 
+"Z Axis"
+#END
+
+STRLT	$HSIO_003_CT4.Acc	0
+OUT	C20
+
+// Rung Go_Home_Pose#15
+// Offset 68
+STR	C20
+AND	X11
+AND	C800
+PWMOUT	@HSIO_002_PWM4	$HSIO_002_PWM4	Y22	1000	50
+
+// Rung Go_Home_Pose#16
+// Offset 85
+STRGT	$HSIO_003_CT4.Acc	0
+OUT	C21
+
+// Rung Go_Home_Pose#17
+// Offset 90
+STR	C21
+OUT	Y11
+
+// Rung Go_Home_Pose#18
+// Offset 92
+STR	Y11
+OUT	C22
+
+// Rung Go_Home_Pose#19
+// Offset 94
+STR	C22
+AND	X11
+AND	C800
+PWMOUT	@HSIO_002_PWM4	$HSIO_002_PWM4	Y22	1000	50
+
+// Rung Go_Home_Pose#20
+// Offset 111
+STRLT	$HSIO_003_CT3.Acc	0
+OUT	C23
+
+// Rung Go_Home_Pose#21
+// Offset 116
+STR	C23
+AND	X10
+AND	C800
+PWMOUT	@HSIO_002_PWM3	$HSIO_002_PWM3	Y20	1000	50
+
+// Rung Go_Home_Pose#22
+// Offset 133
+STRGT	$HSIO_003_CT3.Acc	0
+OUT	C24
+
+// Rung Go_Home_Pose#23
+// Offset 138
+STR	C24
+OUT	Y10
+
+// Rung Go_Home_Pose#24
+// Offset 140
+STR	Y10
+AND	X10
+AND	C800
+PWMOUT	@HSIO_002_PWM3	$HSIO_002_PWM3	Y20	1000	50
+
+// Rung Go_Home_Pose#25
+// Offset 157
+STRLT	N1	-5
+OUT	C25
+
+// Rung Go_Home_Pose#26
+// Offset 162
+STR	C25
+AND	X9
+AND	C800
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	1000	50
+
+// Rung Go_Home_Pose#27
+// Offset 179
+STRGT	N1	5
+OUT	C26
+
+// Rung Go_Home_Pose#28
+// Offset 184
+STR	C26
+OUT	Y9
+
+// Rung Go_Home_Pose#29
+// Offset 186
+STR	Y9
+AND	X9
+ANDN	C800
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	700	50
+
+// Rung Go_Home_Pose#30
+// Offset 203
+NOP
+
+// Rung Go_Home_Pose#31
+// Offset 204
+RET
+
+// End of Code Block Go_Home_Pose
+$LGCEND	Go_Home_Pose
+
+// Beginning of Code Block Test
+$LGCMOD	Test
+
+// Rung Test#1
+// Offset 0
+NOP
+
+// Rung Test#2
+// Offset 1
+NOP
+
+// Rung Test#3
+// Offset 2
+RET
+
+// End of Code Block Test
+$LGCEND	Test
+
+// Beginning of Code Block Z_axis
+$LGCMOD	Z_axis
+
+// Rung Z_axis#1
+// Offset 0
+#BEGIN FMT_COMMENT 
+"Up Direction<br> "
+#END
+
+STR	X72
+OUT	Y11
+
+// Rung Z_axis#2
+// Offset 2
+STR	X22
+OUT	C22
+
+// Rung Z_axis#3
+// Offset 4
+STR	C1
+OUT	Y22
+OUT	Y20
+OUT	Y16
+OUT	Y18
+
+// Rung Z_axis#4
+// Offset 9
+NOP
+
+// Rung Z_axis#5
+// Offset 10
+RET
+
+// End of Code Block Z_axis
+$LGCEND	Z_axis
+
+// Beginning of Code Block X1_axis
+$LGCMOD	X1_axis
+
+// Rung X1_axis#1
+// Offset 0
+NOP
+
+// Rung X1_axis#2
+// Offset 1
+STR	C1
+OUT	Y16
+
+// Rung X1_axis#3
+// Offset 3
+STRGT	$HSIO_003_CT1.Acc	0
+OUT	C20
+
+// Rung X1_axis#4
+// Offset 8
+STR	C20
+OUT	Y17
+
+// Rung X1_axis#5
+// Offset 10
+NOP
+
+// Rung X1_axis#6
+// Offset 11
+NOP
+
+// Rung X1_axis#7
+// Offset 12
+RET
+
+// End of Code Block X1_axis
+$LGCEND	X1_axis
+
+// Beginning of Code Block X2_axis
+$LGCMOD	X2_axis
+
+// Rung X2_axis#1
+// Offset 0
+NOP
+
+// Rung X2_axis#2
+// Offset 1
+STR	C1
+OUT	Y18
+
+// Rung X2_axis#3
+// Offset 3
+RET
+
+// End of Code Block X2_axis
+$LGCEND	X2_axis
+
+// Beginning of Code Block Y_axis
+$LGCMOD	Y_axis
+
+// Rung Y_axis#1
+// Offset 0
+NOP
+
+// Rung Y_axis#2
+// Offset 1
+NOP
+
+// Rung Y_axis#3
+// Offset 2
+STR	C1
+OUT	Y20
+
+// Rung Y_axis#4
+// Offset 4
+RET
+
+// End of Code Block Y_axis
+$LGCEND	Y_axis
+
+// Beginning of Code Block SR_Read_Encoders
+$LGCMOD	SR_Read_Encoders
+
+// Rung SR_Read_Encoders#1
+// Offset 0
+HSCNT	@HSIO_003_CT1	$HSIO_003_CT1	X48	X49	ST1023	ST1023	ST1023	DST511
+
+// Rung SR_Read_Encoders#2
+// Offset 11
+HSCNT	@HSIO_003_CT2	$HSIO_003_CT2	X50	X51	ST1023	ST1023	ST1023	DST511
+
+// Rung SR_Read_Encoders#3
+// Offset 22
+HSCNT	@HSIO_003_CT3	$HSIO_003_CT3	X52	X53	ST1023	ST1023	ST1023	DST511
+
+// Rung SR_Read_Encoders#4
+// Offset 33
+HSCNT	@HSIO_003_CT4	$HSIO_003_CT4	X54	X55	ST1023	ST1023	ST1023	DST511
+
+// Rung SR_Read_Encoders#5
+// Offset 44
+NOP
+
+// Rung SR_Read_Encoders#6
+// Offset 45
+STR	C10
+OR	C10
+OUT	$HSIO_003_CT1.ResetLevel
+OUT	$HSIO_003_CT2.ResetLevel
+
+// Rung SR_Read_Encoders#7
+// Offset 49
+STR	C11
+OUT	$HSIO_003_CT3.ResetLevel
+
+// Rung SR_Read_Encoders#8
+// Offset 51
+STR	C12
+OUT	$HSIO_003_CT4.ResetLevel
+
+// Rung SR_Read_Encoders#9
+// Offset 53
+STR	ST1
+COPY	0x1	"4 0x0 $HSIO_003_CT1.Acc N0 1 0x0 $HSIO_003_CT2.Acc N1 1 0x0 $HSIO_003_CT3.Acc N2 1 0x0 $HSIO_003_CT4.Acc N3 1"
+
+// Rung SR_Read_Encoders#10
+// Offset 66
+STR	ST1
+MATH	GantEnc0.X1_Enc_X1	"$HSIO_003_CT1.Acc / 10"
+
+// Rung SR_Read_Encoders#11
+// Offset 75
+RET
+
+// End of Code Block SR_Read_Encoders
+$LGCEND	SR_Read_Encoders
+
+// Beginning of Code Block Lights
+$LGCMOD	Lights
+
+// Rung Lights#1
+// Offset 0
+STR	$Main.Running
+OUT	Y3
+
+// Rung Lights#2
+// Offset 2
+STR	C16
+OR	C211
+OR	C139
+OUT	Y2
+RST	Y3
+
+// Rung Lights#3
+// Offset 7
+STR	HOME_STG.Running
+OR	True_Calib_STG.Running
+OUT	Y1
+RST	Y3
+
+// Rung Lights#4
+// Offset 11
+STR	C82
+OR	C102
+OUT	Y4
+RST	Y3
+
+// Rung Lights#5
+// Offset 15
+STRN	X0
+ORN	X2
+OUT	Y0
+RST	Y3
+RST	Y1
+RST	Y2
+RST	Y4
+OUT	Y5
+
+// Rung Lights#6
+// Offset 23
+NOP
+
+// Rung Lights#7
+// Offset 24
+NOP
+
+// Rung Lights#8
+// Offset 25
+RET
+
+// End of Code Block Lights
+$LGCEND	Lights
+
+// Beginning of Code Block Notify_Alert
+$LGCMOD	Notify_Alert
+
+// Rung Notify_Alert#1
+// Offset 0
+NOP
+
+// Rung Notify_Alert#2
+// Offset 1
+NOP
+
+// Rung Notify_Alert#3
+// Offset 2
+RET
+
+// End of Code Block Notify_Alert
+$LGCEND	Notify_Alert
+
+// Beginning of Code Block Move_to_Position
+$LGCMOD	Move_to_Position
+
+// Rung Move_to_Position#1
+// Offset 0
+STR	ST1
+OUT	Y9
+OUT	Y8
+
+// Rung Move_to_Position#2
+// Offset 3
+STRLT	N200	$HSIO_003_CT1.Acc
+OUT	C260
+
+// Rung Move_to_Position#3
+// Offset 8
+STRGT	N201	$HSIO_003_CT2.Acc
+OUT	C261
+
+// Rung Move_to_Position#4
+// Offset 13
+STRLT	N202	$HSIO_003_CT3.Acc
+OUT	C262
+
+// Rung Move_to_Position#5
+// Offset 18
+STR	C260
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	400	50
+
+// Rung Move_to_Position#6
+// Offset 33
+STR	C261
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	400	50
+
+// Rung Move_to_Position#7
+// Offset 48
+STR	C262
+PWMOUT	@HSIO_002_PWM3	$HSIO_002_PWM3	Y20	400	50
+
+// Rung Move_to_Position#8
+// Offset 63
+STRGE	N200	$HSIO_003_CT1.Acc
+OUT	C230
+
+// Rung Move_to_Position#9
+// Offset 68
+STRLE	N201	$HSIO_003_CT2.Acc
+OUT	C231
+
+// Rung Move_to_Position#10
+// Offset 73
+STR	C400
+ANDN	C900
+OUT	Y10
+
+// Rung Move_to_Position#11
+// Offset 76
+STRGE	-13780	$HSIO_003_CT3.Acc
+OUT	C401
+
+// Rung Move_to_Position#12
+// Offset 81
+NOP
+
+// Rung Move_to_Position#13
+// Offset 82
+RET
+
+// End of Code Block Move_to_Position
+$LGCEND	Move_to_Position
+
+// Beginning of Code Block X1_Hom
+$LGCMOD	X1_Hom
+
+// Rung X1_Hom#1
+// Offset 0
+NOP
+
+// Rung X1_Hom#2
+// Offset 1
+STRGE	$HSIO_003_CT1.Acc	-5
+ORLE	$HSIO_003_CT1.Acc	5
+OUT	C40
+
+// Rung X1_Hom#3
+// Offset 10
+STR	C20
+AND	C47
+AND	X8
+OUT	C48
+
+// Rung X1_Hom#4
+// Offset 14
+STRN	C48
+AND	C50
+OUT	C49
+
+// Rung X1_Hom#5
+// Offset 17
+STRN	C48
+SET	C50
+
+// Rung X1_Hom#6
+// Offset 19
+STR	C48
+RST	C50
+
+// Rung X1_Hom#7
+// Offset 21
+STR	C20
+ANDN	C47
+AND	X8
+OUT	C42
+
+// Rung X1_Hom#8
+// Offset 25
+STRN	C42
+OUT	C877
+
+// Rung X1_Hom#9
+// Offset 27
+STR	C42
+ANDN	C5
+AND	X8
+ANDN	C59
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	700	50
+SET	C31
+
+// Rung X1_Hom#10
+// Offset 46
+STR	C49
+OUT	C47
+
+// Rung X1_Hom#11
+// Offset 48
+STRN	C49
+OUT	$HSIO_003_CT1.ResetEdge
+RST	C31
+
+// Rung X1_Hom#12
+// Offset 51
+STRLE	$HSIO_003_CT1.Acc	3
+ANDN	X8
+OUT	C53
+
+// Rung X1_Hom#13
+// Offset 57
+STR	C53
+TMR	T20	1000
+
+// Rung X1_Hom#14
+// Offset 60
+STR	C40
+ANDN	X8
+OUT	C57
+
+// Rung X1_Hom#15
+// Offset 63
+STRN	X8
+OUT	$HSIO_003_CT1.ResetEdge
+
+// Rung X1_Hom#16
+// Offset 65
+RET
+
+// End of Code Block X1_Hom
+$LGCEND	X1_Hom
+
+// Beginning of Code Block X2_Hom
+$LGCMOD	X2_Hom
+
+// Rung X2_Hom#1
+// Offset 0
+NOP
+
+// Rung X2_Hom#2
+// Offset 1
+STRGE	$HSIO_003_CT2.Acc	-5
+ORLE	$HSIO_003_CT2.Acc	5
+OUT	C60
+
+// Rung X2_Hom#3
+// Offset 10
+STR	C20
+AND	C67
+AND	X9
+OUT	C68
+
+// Rung X2_Hom#4
+// Offset 14
+STRN	C68
+AND	C70
+OUT	C69
+
+// Rung X2_Hom#5
+// Offset 17
+STRN	C68
+SET	C70
+
+// Rung X2_Hom#6
+// Offset 19
+STR	C68
+RST	C70
+
+// Rung X2_Hom#7
+// Offset 21
+STR	C20
+ANDN	C67
+AND	X9
+OUT	C62
+
+// Rung X2_Hom#8
+// Offset 25
+STRN	C62
+OUT	C877
+
+// Rung X2_Hom#9
+// Offset 27
+STR	C62
+ANDN	C5
+AND	X9
+ANDN	C79
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	700	50
+SET	C32
+
+// Rung X2_Hom#10
+// Offset 46
+STR	C69
+OUT	C67
+
+// Rung X2_Hom#11
+// Offset 48
+STRN	C69
+OUT	$HSIO_003_CT2.ResetEdge
+RST	C32
+
+// Rung X2_Hom#12
+// Offset 51
+STRLE	$HSIO_003_CT2.Acc	3
+ANDN	X9
+OUT	C73
+
+// Rung X2_Hom#13
+// Offset 57
+STR	C60
+ANDN	X9
+OUT	C77
+
+// Rung X2_Hom#14
+// Offset 60
+STRN	X9
+OUT	$HSIO_003_CT2.ResetEdge
+
+// Rung X2_Hom#15
+// Offset 62
+NOP
+
+// Rung X2_Hom#16
+// Offset 63
+RET
+
+// End of Code Block X2_Hom
+$LGCEND	X2_Hom
+
+// Beginning of Code Block Y_Hom
+$LGCMOD	Y_Hom
+
+// Rung Y_Hom#1
+// Offset 0
+NOP
+
+// Rung Y_Hom#2
+// Offset 1
+STRGE	$HSIO_003_CT3.Acc	-5
+ORLE	$HSIO_003_CT3.Acc	5
+OUT	C80
+
+// Rung Y_Hom#3
+// Offset 10
+STR	C20
+SET	Y10
+
+// Rung Y_Hom#4
+// Offset 12
+STR	C20
+AND	C87
+AND	X10
+OUT	C88
+
+// Rung Y_Hom#5
+// Offset 16
+STRN	C88
+AND	C90
+OUT	C89
+
+// Rung Y_Hom#6
+// Offset 19
+STRN	C88
+SET	C90
+
+// Rung Y_Hom#7
+// Offset 21
+STR	C88
+RST	C90
+
+// Rung Y_Hom#8
+// Offset 23
+STR	C20
+ANDN	C87
+AND	X10
+OUT	C82
+
+// Rung Y_Hom#9
+// Offset 27
+STRN	C82
+OUT	C877
+
+// Rung Y_Hom#10
+// Offset 29
+STR	C82
+ANDN	C5
+AND	X10
+ANDN	C99
+PWMOUT	@HSIO_002_PWM3	$HSIO_002_PWM3	Y20	800	50
+SET	C33
+
+// Rung Y_Hom#11
+// Offset 48
+STR	C89
+ANDN	X10
+OUT	C87
+
+// Rung Y_Hom#12
+// Offset 51
+STRN	C89
+OUT	$HSIO_003_CT3.ResetEdge
+RST	C33
+RST	Y10
+
+// Rung Y_Hom#13
+// Offset 55
+STRLE	$HSIO_003_CT3.Acc	0
+AND	C89
+ANDN	X10
+OUT	C93
+
+// Rung Y_Hom#14
+// Offset 62
+STRN	X10
+OUT	$HSIO_003_CT3.ResetEdge
+
+// Rung Y_Hom#15
+// Offset 64
+NOP
+
+// Rung Y_Hom#16
+// Offset 65
+RET
+
+// End of Code Block Y_Hom
+$LGCEND	Y_Hom
+
+// Beginning of Code Block Z_Hom
+$LGCMOD	Z_Hom
+
+// Rung Z_Hom#1
+// Offset 0
+STR	ST1
+OUT	Y11
+
+// Rung Z_Hom#2
+// Offset 2
+STRGE	$HSIO_003_CT4.Acc	-5
+ORLE	$HSIO_003_CT4.Acc	5
+OUT	C100
+
+// Rung Z_Hom#3
+// Offset 11
+NOP
+
+// Rung Z_Hom#4
+// Offset 12
+STR	C20
+ANDN	C252
+SET	Y11
+
+// Rung Z_Hom#5
+// Offset 15
+STR	C20
+AND	C107
+AND	X11
+OUT	C108
+
+// Rung Z_Hom#6
+// Offset 19
+STRN	C108
+AND	C110
+OUT	C109
+
+// Rung Z_Hom#7
+// Offset 22
+STRN	C108
+SET	C110
+
+// Rung Z_Hom#8
+// Offset 24
+STR	C108
+RST	C110
+
+// Rung Z_Hom#9
+// Offset 26
+STR	C20
+ANDN	C107
+AND	X11
+OUT	C102
+
+// Rung Z_Hom#10
+// Offset 30
+STRN	C102
+OUT	C877
+
+// Rung Z_Hom#11
+// Offset 32
+STR	C102
+ANDN	C5
+AND	X11
+ANDN	C119
+AND	X7
+PWMOUT	@HSIO_002_PWM4	$HSIO_002_PWM4	Y22	800	50
+SET	C34
+OUT	C888
+
+// Rung Z_Hom#12
+// Offset 53
+STR	C109
+ANDN	X11
+OUT	C107
+
+// Rung Z_Hom#13
+// Offset 56
+STRN	C109
+OUT	$HSIO_003_CT4.ResetEdge
+RST	C34
+
+// Rung Z_Hom#14
+// Offset 59
+STR	C109
+OUT	C117
+
+// Rung Z_Hom#15
+// Offset 61
+STRLE	$HSIO_003_CT4.Acc	0
+AND	C109
+ANDN	X11
+OUT	C113
+
+// Rung Z_Hom#16
+// Offset 68
+STRN	X11
+OUT	$HSIO_003_CT4.ResetEdge
+
+// Rung Z_Hom#17
+// Offset 70
+NOP
+
+// Rung Z_Hom#18
+// Offset 71
+RET
+
+// End of Code Block Z_Hom
+$LGCEND	Z_Hom
+
+// Beginning of Code Block Read_Encoders
+$LGCMOD	Read_Encoders
+
+// Rung Read_Encoders#1
+// Offset 0
+HSCNT	@HSIO_003_CT1	$HSIO_003_CT1	X48	X49	ST1023	ST1023	ST1023	DST511
+
+// Rung Read_Encoders#2
+// Offset 11
+HSCNT	@HSIO_003_CT2	$HSIO_003_CT2	X50	X51	ST1023	ST1023	ST1023	DST511
+
+// Rung Read_Encoders#3
+// Offset 22
+HSCNT	@HSIO_003_CT3	$HSIO_003_CT3	X52	X53	ST1023	ST1023	ST1023	DST511
+
+// Rung Read_Encoders#4
+// Offset 33
+HSCNT	@HSIO_003_CT4	$HSIO_003_CT4	X54	X55	ST1023	ST1023	ST1023	DST511
+
+// Rung Read_Encoders#5
+// Offset 44
+STR	ST1
+COPY	0x1	"4 0x0 $HSIO_003_CT1.Acc D150 1 0x0 $HSIO_003_CT2.Acc D151 1 0x0 $HSIO_003_CT3.Acc D152 1 0x0 $HSIO_003_CT4.Acc D153 1"
+
+// Rung Read_Encoders#6
+// Offset 57
+NOP
+
+// Rung Read_Encoders#7
+// Offset 58
+NOP
+
+// Rung Read_Encoders#8
+// Offset 59
+NOP
+
+// Rung Read_Encoders#9
+// Offset 60
+RET
+
+// End of Code Block Read_Encoders
+$LGCEND	Read_Encoders
+
+// Beginning of Code Block Y_Calibration
+$LGCMOD	Y_Calibration
+
+// Rung Y_Calibration#1
+// Offset 0
+STR	C93
+COPY	0x1	"4 0x0 15000 D121 1"
+
+// Rung Y_Calibration#2
+// Offset 7
+STR	C20
+AND	C93
+RST	Y10
+
+// Rung Y_Calibration#3
+// Offset 10
+STR	C93
+ANDN	X10
+OUT	C96
+
+// Rung Y_Calibration#4
+// Offset 13
+STRLE	$HSIO_003_CT3.Acc	D121
+OUT	C95
+
+// Rung Y_Calibration#5
+// Offset 18
+STRN	C95
+OUT	C877
+
+// Rung Y_Calibration#6
+// Offset 20
+STR	C95
+ANDN	C5
+ANDN	C99
+PWMOUT	@HSIO_002_PWM3	$HSIO_002_PWM3	Y20	800	50
+
+// Rung Y_Calibration#7
+// Offset 37
+STRGE	$HSIO_003_CT3.Acc	D121
+AND	C93
+OUT	C94
+
+// Rung Y_Calibration#8
+// Offset 43
+RET
+
+// End of Code Block Y_Calibration
+$LGCEND	Y_Calibration
+
+// Beginning of Code Block X_Calibration
+$LGCMOD	X_Calibration
+
+// Rung X_Calibration#1
+// Offset 0
+STR	C57
+AND	C77
+COPY	0x1	"4 0x0 495 D100 1"
+COPY	0x1	"4 0x0 1410 D101 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+
+// Rung X_Calibration#2
+// Offset 30
+STRLE	N0	0
+ANDLE	N1	0
+AND	C546
+COPY	0x1	"4 0x0 500 D100 1"
+COPY	0x1	"4 0x0 1410 D101 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+
+// Rung X_Calibration#3
+// Offset 59
+STR	C57
+AND	C77
+MATH	D104	"D100 * D112"
+MATH	D105	"D100 * D113"
+MATH	D118	"(D100 * D112) / D101"
+MATH	D119	"(D100 * D113) / D101"
+
+// Rung X_Calibration#4
+// Offset 97
+STR	C57
+AND	C77
+COPY	0x1	"4 0x0 D118 D116 1"
+COPY	0x1	"4 0x0 D119 D117 1"
+
+// Rung X_Calibration#5
+// Offset 111
+STR	C20
+AND	C57
+AND	C77
+AND	C250
+SET	Y8
+SET	Y9
+RST	Y60
+
+// Rung X_Calibration#6
+// Offset 118
+STR	C53
+ANDN	X8
+AND	C73
+ANDN	X9
+OUT	C56
+OUT	C76
+
+// Rung X_Calibration#7
+// Offset 124
+STRLE	$HSIO_003_CT1.Acc	D116
+ANDN	C54
+AND	C57
+OUT	C55
+
+// Rung X_Calibration#8
+// Offset 131
+STRLE	$HSIO_003_CT2.Acc	D117
+ANDN	C74
+AND	C77
+OUT	C75
+
+// Rung X_Calibration#9
+// Offset 138
+STRN	C55
+OUT	C877
+
+// Rung X_Calibration#10
+// Offset 140
+STR	C55
+ANDN	C5
+ANDN	C59
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	800	50
+
+// Rung X_Calibration#11
+// Offset 157
+STR	C75
+ANDN	C5
+ANDN	C79
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	805	50
+
+// Rung X_Calibration#12
+// Offset 174
+STRGE	$HSIO_003_CT1.Acc	D116
+AND	C53
+OUT	C54
+
+// Rung X_Calibration#13
+// Offset 180
+STRGE	$HSIO_003_CT2.Acc	D117
+AND	C73
+OUT	C74
+
+// Rung X_Calibration#14
+// Offset 186
+STR	C54
+AND	C74
+MOVE	0	D104
+MOVE	0	D105
+MOVE	0	D118
+MOVE	0	D119
+MOVE	0	D116
+MOVE	0	D116
+
+// Rung X_Calibration#15
+// Offset 200
+RET
+
+// End of Code Block X_Calibration
+$LGCEND	X_Calibration
+
+// Beginning of Code Block Z_Calibration
+$LGCMOD	Z_Calibration
+
+// Rung Z_Calibration#1
+// Offset 0
+STR	C113
+COPY	0x1	"4 0x0 1500 D120 1"
+
+// Rung Z_Calibration#2
+// Offset 7
+STR	C20
+AND	C113
+RST	Y11
+
+// Rung Z_Calibration#3
+// Offset 10
+STR	C113
+ANDN	X11
+OUT	C116
+
+// Rung Z_Calibration#4
+// Offset 13
+STRLE	$HSIO_003_CT4.Acc	D120
+ANDN	C114
+OUT	C115
+
+// Rung Z_Calibration#5
+// Offset 19
+STRN	C115
+OUT	C877
+
+// Rung Z_Calibration#6
+// Offset 21
+STR	C115
+ANDN	C5
+ANDN	C119
+PWMOUT	@HSIO_002_PWM4	$HSIO_002_PWM4	Y22	1000	50
+
+// Rung Z_Calibration#7
+// Offset 38
+STRGE	$HSIO_003_CT4.Acc	D120
+AND	C117
+AND	C250
+OUT	C114
+
+// Rung Z_Calibration#8
+// Offset 45
+STR	C114
+AND	C565
+MOVE	0	D120
+
+// Rung Z_Calibration#9
+// Offset 49
+RET
+
+// End of Code Block Z_Calibration
+$LGCEND	Z_Calibration
+
+// Beginning of Code Block X_Mov
+$LGCMOD	X_Mov
+
+// Rung X_Mov#1
+// Offset 0
+STR	C208
+AND	C565
+COPY	0x1	"4 0x0 D169 D100 1"
+COPY	0x1	"4 0x0 1410 D101 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+
+// Rung X_Mov#2
+// Offset 30
+STR	C208
+ANDGE	D181	$HSIO_003_CT1.Acc
+OUT	C142
+
+// Rung X_Mov#3
+// Offset 36
+STR	C208
+ANDLE	D181	$HSIO_003_CT1.Acc
+OUT	C143
+
+// Rung X_Mov#4
+// Offset 42
+STR	C142
+SET	Y8
+SET	Y9
+
+// Rung X_Mov#5
+// Offset 45
+STR	C143
+RST	Y8
+RST	Y9
+
+// Rung X_Mov#6
+// Offset 48
+NOP
+
+// Rung X_Mov#7
+// Offset 49
+STR	C208
+AND	C767
+COPY	0x1	"4 0x0 D169 D100 1"
+COPY	0x1	"4 0x0 1410 D101 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+
+// Rung X_Mov#8
+// Offset 79
+NOP
+
+// Rung X_Mov#9
+// Offset 80
+NOP
+
+// Rung X_Mov#10
+// Offset 81
+NOP
+
+// Rung X_Mov#11
+// Offset 82
+STRLE	N0	0
+ANDLE	N1	0
+AND	C546
+COPY	0x1	"4 0x0 500 D100 1"
+COPY	0x1	"4 0x0 1410 D101 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+
+// Rung X_Mov#12
+// Offset 111
+STR	C208
+AND	C676
+MATH	D104	"D100 * D112"
+MATH	D105	"D100 * D113"
+MATH	D118	"(D100 * D112) / D101"
+MATH	D119	"(D100 * D113) / D101"
+
+// Rung X_Mov#13
+// Offset 149
+STR	C208
+AND	C676
+COPY	0x1	"4 0x0 D118 D167 1"
+COPY	0x1	"4 0x0 D119 D168 1"
+
+// Rung X_Mov#14
+// Offset 163
+STR	C208
+AND	C207
+AND	C676
+SET	Y8
+SET	Y9
+RST	Y60
+
+// Rung X_Mov#15
+// Offset 169
+STR	C53
+ANDN	X8
+AND	C73
+ANDN	X9
+AND	C789
+OUT	C56
+OUT	C76
+
+// Rung X_Mov#16
+// Offset 176
+STRLT	$HSIO_003_CT1.Acc	D181
+OUT	C120
+
+// Rung X_Mov#17
+// Offset 181
+STRLT	$HSIO_003_CT2.Acc	D182
+OUT	C121
+
+// Rung X_Mov#18
+// Offset 186
+STR	C120
+ANDN	C5
+ANDN	C59
+OUT	C122
+
+// Rung X_Mov#19
+// Offset 190
+STR	C121
+ANDN	C5
+ANDN	C79
+OUT	C123
+
+// Rung X_Mov#20
+// Offset 194
+STR	C122
+AND	C123
+OUT	C124
+
+// Rung X_Mov#21
+// Offset 197
+STR	C124
+ANDN	C59
+ANDN	C79
+ANDN	C5
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	800	50
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	800	50
+
+// Rung X_Mov#22
+// Offset 229
+STR	C120
+ANDN	C5
+ANDN	C59
+AND	C676
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	800	50
+
+// Rung X_Mov#23
+// Offset 247
+STR	C121
+ANDN	C5
+ANDN	C79
+AND	C565
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	800	50
+
+// Rung X_Mov#24
+// Offset 265
+STR	C124
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	800	50
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	800	50
+
+// Rung X_Mov#25
+// Offset 294
+STRGE	$HSIO_003_CT1.Acc	D181
+AND	C211
+OUT	C170
+
+// Rung X_Mov#26
+// Offset 300
+STRGE	$HSIO_003_CT2.Acc	D182
+AND	C211
+OUT	C171
+
+// Rung X_Mov#27
+// Offset 306
+STR	C170
+AND	C171
+COPY	0x1	"4 0x0 0 D167 1 0x0 0 D168 1"
+
+// Rung X_Mov#28
+// Offset 316
+STR	C170
+AND	C171
+AND	C677
+MOVE	0	D104
+MOVE	0	D105
+MOVE	0	D118
+MOVE	0	D119
+MOVE	0	D116
+MOVE	0	D116
+OUT	Y1
+
+// Rung X_Mov#29
+// Offset 332
+NOP
+
+// Rung X_Mov#30
+// Offset 333
+NOP
+
+// Rung X_Mov#31
+// Offset 334
+RET
+
+// End of Code Block X_Mov
+$LGCEND	X_Mov
+
+// Beginning of Code Block Y_Mov
+$LGCMOD	Y_Mov
+
+// Rung Y_Mov#1
+// Offset 0
+STR	C93
+COPY	0x1	"4 0x0 3462 D121 1"
+
+// Rung Y_Mov#2
+// Offset 7
+STR	C20
+AND	C93
+RST	Y10
+
+// Rung Y_Mov#3
+// Offset 10
+STR	C93
+ANDN	X10
+OUT	C96
+
+// Rung Y_Mov#4
+// Offset 13
+STRLT	$HSIO_003_CT3.Acc	D187
+OUT	C95
+
+// Rung Y_Mov#5
+// Offset 18
+STRN	C95
+OUT	C877
+
+// Rung Y_Mov#6
+// Offset 20
+STR	C95
+ANDN	C5
+ANDN	C99
+AND	C211
+ANDN	C172
+PWMOUT	@HSIO_002_PWM3	$HSIO_002_PWM3	Y20	1000	50
+
+// Rung Y_Mov#7
+// Offset 39
+STRGE	$HSIO_003_CT3.Acc	D187
+AND	C211
+OUT	C172
+
+// Rung Y_Mov#8
+// Offset 45
+STRGE	$HSIO_003_CT3.Acc	D121
+AND	C139
+OUT	C125
+
+// Rung Y_Mov#9
+// Offset 51
+NOP
+
+// Rung Y_Mov#10
+// Offset 52
+RET
+
+// End of Code Block Y_Mov
+$LGCEND	Y_Mov
+
+// Beginning of Code Block Z_Mov
+$LGCMOD	Z_Mov
+
+// Rung Z_Mov#1
+// Offset 0
+STR	C113
+STR	C211
+OR	C139
+ANDSTR
+COPY	0x1	"4 0x0 9072 D171 1"
+
+// Rung Z_Mov#2
+// Offset 10
+STR	C20
+AND	C113
+RST	Y11
+
+// Rung Z_Mov#3
+// Offset 13
+STR	C113
+ANDN	X11
+OUT	C116
+
+// Rung Z_Mov#4
+// Offset 16
+STRN	C119
+ANDN	C137
+ANDN	C119
+ANDLT	$HSIO_003_CT4.Acc	D171
+ANDLT	$HSIO_003_CT4.Acc	N100
+OUT	C131
+
+// Rung Z_Mov#5
+// Offset 28
+STRN	C115
+OUT	C877
+
+// Rung Z_Mov#6
+// Offset 30
+STR	C131
+STR	C211
+OR	C139
+ANDSTR
+ANDN	C119
+STR	X7
+OR	X11
+ANDSTR
+ANDN	C5
+ANDN	X11
+AND	C898
+OUT	C138
+
+// Rung Z_Mov#7
+// Offset 42
+STR	C131
+ANDN	C5
+ANDN	C119
+STR	X7
+AND	C211
+STR	X11
+AND	C139
+ORSTR
+ANDSTR
+AND	C878
+OUT	C138
+
+// Rung Z_Mov#8
+// Offset 53
+STR	C131
+ANDN	C5
+ANDN	C119
+AND	X7
+OUT	C138
+
+// Rung Z_Mov#9
+// Offset 58
+STR	C131
+ANDN	C5
+ANDN	C119
+AND	X11
+OUT	C144
+
+// Rung Z_Mov#10
+// Offset 63
+STRN	C119
+ANDN	C137
+ANDN	C132
+STR	C138
+OR	C144
+ANDSTR
+ANDN	C5
+ANDN	C119
+AND	X7
+PWMOUT	@HSIO_002_PWM4	$HSIO_002_PWM4	Y22	800	50
+
+// Rung Z_Mov#11
+// Offset 86
+STR	C139
+AND	C778
+RST	C211
+
+// Rung Z_Mov#12
+// Offset 89
+STRGE	$HSIO_003_CT4.Acc	D171
+AND	C211
+OUT	C173
+
+// Rung Z_Mov#13
+// Offset 95
+STR	C139
+MATH	D229	"D171 + 10"
+MATH	D228	"D171 - 10"
+
+// Rung Z_Mov#14
+// Offset 112
+STRGE	D171	$HSIO_003_CT4.Acc
+AND	C139
+AND	X980
+OUT	C126
+
+// Rung Z_Mov#15
+// Offset 119
+STRGE	$HSIO_003_CT4.Acc	D228
+ANDLE	$HSIO_003_CT4.Acc	D229
+OUT	C126
+
+// Rung Z_Mov#16
+// Offset 128
+STRGE	$HSIO_003_CT4.Acc	D171
+AND	C139
+OUT	C127
+
+// Rung Z_Mov#17
+// Offset 134
+RET
+
+// End of Code Block Z_Mov
+$LGCEND	Z_Mov
+
+// Beginning of Code Block Reset_SR
+$LGCMOD	Reset_SR
+
+// Rung Reset_SR#1
+// Offset 0
+STR	ST0
+RST	C21
+RST	C22
+OUT	C47
+OUT	Y5
+OUT	C67
+OUT	C87
+OUT	C107
+OUT	$HSIO_003_CT1.ResetEdge
+OUT	$HSIO_003_CT2.ResetEdge
+OUT	$HSIO_003_CT3.ResetEdge
+OUT	$HSIO_003_CT4.ResetEdge
+RST	Y1
+RST	C250
+RST	C53
+RST	C73
+RST	C93
+RST	C113
+RST	C17
+RST	C42
+RST	C62
+RST	C82
+RST	C102
+RST	C206
+RST	C126
+RST	C223
+RST	C224
+RST	C225
+RST	C226
+RST	C228
+
+// Rung Reset_SR#2
+// Offset 30
+STR	ST0
+RST	C54
+RST	C74
+RST	C94
+RST	C114
+RST	C170
+RST	C171
+RST	C172
+RST	C173
+RST	C203
+RST	C204
+RST	C205
+
+// Rung Reset_SR#3
+// Offset 42
+STR	ST0
+RST	C118
+RST	C17
+RST	C250
+RST	C38
+RST	C39
+RST	C211
+RST	Y12
+RST	C173
+RST	C174
+RST	C130
+RST	C140
+RST	C212
+RST	Y12
+RST	C125
+RST	C126
+RST	C127
+RST	C252
+RST	C177
+RST	C178
+RST	C216
+MOVE	0	D214
+RST	C150
+SET	C151
+RST	C219
+RST	C222
+RSTT	T15
+RST	C217
+RST	C218
+MOVE	0	D172
+RST	C229
+
+// Rung Reset_SR#4
+// Offset 75
+RET
+
+// End of Code Block Reset_SR
+$LGCEND	Reset_SR
+
+// Beginning of Code Block Z_Homm
+$LGCMOD	Z_Homm
+
+// Rung Z_Homm#1
+// Offset 0
+NOP
+
+// Rung Z_Homm#2
+// Offset 1
+STRGE	$HSIO_003_CT4.Acc	-5
+ORLE	$HSIO_003_CT4.Acc	5
+OUT	C100
+
+// Rung Z_Homm#3
+// Offset 10
+STR	C20
+AND	C250
+SET	Y11
+
+// Rung Z_Homm#4
+// Offset 13
+STR	C20
+AND	C107
+AND	X11
+OUT	C108
+
+// Rung Z_Homm#5
+// Offset 17
+STRN	C108
+AND	C110
+OUT	C109
+
+// Rung Z_Homm#6
+// Offset 20
+STRN	C108
+SET	C110
+
+// Rung Z_Homm#7
+// Offset 22
+STR	C108
+RST	C110
+
+// Rung Z_Homm#8
+// Offset 24
+STR	C20
+ANDN	C107
+AND	X11
+OUT	C102
+
+// Rung Z_Homm#9
+// Offset 28
+STRN	C102
+OUT	C877
+
+// Rung Z_Homm#10
+// Offset 30
+STR	C102
+ANDN	C5
+AND	X11
+ANDN	C118
+AND	X7
+PWMOUT	@HSIO_002_PWM4	$HSIO_002_PWM4	Y22	1000	50
+SET	C34
+OUT	C888
+
+// Rung Z_Homm#11
+// Offset 51
+STR	C109
+ANDN	X11
+OUT	C107
+
+// Rung Z_Homm#12
+// Offset 54
+STRN	C109
+OUT	$HSIO_003_CT4.ResetEdge
+RST	C34
+
+// Rung Z_Homm#13
+// Offset 57
+STR	C109
+OUT	C117
+
+// Rung Z_Homm#14
+// Offset 59
+STRLE	$HSIO_003_CT4.Acc	0
+AND	C109
+ANDN	X11
+OUT	C118
+
+// Rung Z_Homm#15
+// Offset 66
+STRLE	$HSIO_003_CT4.Acc	4
+ANDN	X11
+AND	C211
+OUT	C130
+
+// Rung Z_Homm#16
+// Offset 73
+STRLE	$HSIO_003_CT4.Acc	0
+ANDN	X11
+AND	C139
+OUT	C226
+
+// Rung Z_Homm#17
+// Offset 80
+STRN	X11
+OUT	$HSIO_003_CT4.ResetEdge
+
+// Rung Z_Homm#18
+// Offset 82
+NOP
+
+// Rung Z_Homm#19
+// Offset 83
+RET
+
+// End of Code Block Z_Homm
+$LGCEND	Z_Homm
+
+// Beginning of Code Block X1_Homm
+$LGCMOD	X1_Homm
+
+// Rung X1_Homm#1
+// Offset 0
+NOP
+
+// Rung X1_Homm#2
+// Offset 1
+STRGE	$HSIO_003_CT1.Acc	-5
+ORLE	$HSIO_003_CT1.Acc	5
+OUT	C40
+
+// Rung X1_Homm#3
+// Offset 10
+STR	C20
+AND	C47
+AND	X8
+OUT	C48
+
+// Rung X1_Homm#4
+// Offset 14
+STRN	C48
+AND	C50
+OUT	C49
+
+// Rung X1_Homm#5
+// Offset 17
+STRN	C48
+SET	C50
+
+// Rung X1_Homm#6
+// Offset 19
+STR	C48
+RST	C50
+
+// Rung X1_Homm#7
+// Offset 21
+STR	C20
+ANDN	C47
+AND	X8
+OUT	C42
+
+// Rung X1_Homm#8
+// Offset 25
+STRN	C42
+OUT	C877
+
+// Rung X1_Homm#9
+// Offset 27
+STR	C42
+ANDN	C5
+AND	X8
+ANDN	C59
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	700	50
+SET	C31
+
+// Rung X1_Homm#10
+// Offset 46
+STR	C49
+OUT	C47
+
+// Rung X1_Homm#11
+// Offset 48
+STRN	C49
+OUT	$HSIO_003_CT1.ResetEdge
+RST	C31
+
+// Rung X1_Homm#12
+// Offset 51
+STRLE	$HSIO_003_CT1.Acc	0
+AND	C49
+ANDN	X8
+OUT	C58
+
+// Rung X1_Homm#13
+// Offset 58
+STRLE	$HSIO_003_CT1.Acc	2
+ANDN	X8
+AND	C139
+OUT	C223
+
+// Rung X1_Homm#14
+// Offset 65
+STR	C40
+ANDN	X8
+OUT	C57
+
+// Rung X1_Homm#15
+// Offset 68
+STRN	X8
+OUT	$HSIO_003_CT1.ResetEdge
+
+// Rung X1_Homm#16
+// Offset 70
+NOP
+
+// Rung X1_Homm#17
+// Offset 71
+NOP
+
+// Rung X1_Homm#18
+// Offset 72
+NOP
+
+// Rung X1_Homm#19
+// Offset 73
+RET
+
+// End of Code Block X1_Homm
+$LGCEND	X1_Homm
+
+// Beginning of Code Block X2_Homm
+$LGCMOD	X2_Homm
+
+// Rung X2_Homm#1
+// Offset 0
+NOP
+
+// Rung X2_Homm#2
+// Offset 1
+STRGE	$HSIO_003_CT2.Acc	-5
+ORLE	$HSIO_003_CT2.Acc	5
+OUT	C60
+
+// Rung X2_Homm#3
+// Offset 10
+STR	C20
+AND	C67
+AND	X9
+OUT	C68
+
+// Rung X2_Homm#4
+// Offset 14
+STRN	C68
+AND	C70
+OUT	C69
+
+// Rung X2_Homm#5
+// Offset 17
+STRN	C68
+SET	C70
+
+// Rung X2_Homm#6
+// Offset 19
+STR	C68
+RST	C70
+
+// Rung X2_Homm#7
+// Offset 21
+STR	C20
+ANDN	C67
+AND	X9
+OUT	C62
+
+// Rung X2_Homm#8
+// Offset 25
+STRN	C62
+OUT	C877
+
+// Rung X2_Homm#9
+// Offset 27
+STR	C62
+ANDN	C5
+AND	X9
+ANDN	C79
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	700	50
+SET	C32
+
+// Rung X2_Homm#10
+// Offset 46
+STR	C69
+OUT	C67
+
+// Rung X2_Homm#11
+// Offset 48
+STRN	C69
+OUT	$HSIO_003_CT2.ResetEdge
+RST	C32
+
+// Rung X2_Homm#12
+// Offset 51
+STRLE	$HSIO_003_CT2.Acc	0
+AND	C69
+ANDN	X9
+OUT	C78
+
+// Rung X2_Homm#13
+// Offset 58
+STRLE	$HSIO_003_CT2.Acc	2
+ANDN	X9
+AND	C139
+OUT	C224
+
+// Rung X2_Homm#14
+// Offset 65
+STR	C60
+ANDN	X9
+OUT	C77
+
+// Rung X2_Homm#15
+// Offset 68
+STRN	X9
+OUT	$HSIO_003_CT2.ResetEdge
+
+// Rung X2_Homm#16
+// Offset 70
+NOP
+
+// Rung X2_Homm#17
+// Offset 71
+NOP
+
+// Rung X2_Homm#18
+// Offset 72
+NOP
+
+// Rung X2_Homm#19
+// Offset 73
+NOP
+
+// Rung X2_Homm#20
+// Offset 74
+RET
+
+// End of Code Block X2_Homm
+$LGCEND	X2_Homm
+
+// Beginning of Code Block Y_Homm
+$LGCMOD	Y_Homm
+
+// Rung Y_Homm#1
+// Offset 0
+NOP
+
+// Rung Y_Homm#2
+// Offset 1
+STRGE	$HSIO_003_CT3.Acc	-5
+ORLE	$HSIO_003_CT3.Acc	5
+OUT	C80
+
+// Rung Y_Homm#3
+// Offset 10
+STR	C20
+SET	Y10
+
+// Rung Y_Homm#4
+// Offset 12
+STR	C20
+AND	C87
+AND	X10
+OUT	C88
+
+// Rung Y_Homm#5
+// Offset 16
+STRN	C88
+AND	C90
+OUT	C89
+
+// Rung Y_Homm#6
+// Offset 19
+STRN	C88
+SET	C90
+
+// Rung Y_Homm#7
+// Offset 21
+STR	C88
+RST	C90
+
+// Rung Y_Homm#8
+// Offset 23
+STR	C20
+ANDN	C87
+AND	X10
+OUT	C82
+
+// Rung Y_Homm#9
+// Offset 27
+STRN	C82
+OUT	C877
+
+// Rung Y_Homm#10
+// Offset 29
+STR	C82
+ANDN	C5
+AND	X10
+ANDN	C99
+PWMOUT	@HSIO_002_PWM3	$HSIO_002_PWM3	Y20	800	50
+SET	C33
+
+// Rung Y_Homm#11
+// Offset 48
+STR	C89
+ANDN	X10
+OUT	C87
+
+// Rung Y_Homm#12
+// Offset 51
+STRN	C89
+OUT	$HSIO_003_CT3.ResetEdge
+RST	C33
+RST	Y10
+
+// Rung Y_Homm#13
+// Offset 55
+STRLE	$HSIO_003_CT3.Acc	0
+AND	C89
+ANDN	X10
+OUT	C98
+
+// Rung Y_Homm#14
+// Offset 62
+STRLE	$HSIO_003_CT3.Acc	2
+ANDN	X10
+AND	C139
+OUT	C225
+
+// Rung Y_Homm#15
+// Offset 69
+STRN	X10
+OUT	$HSIO_003_CT3.ResetEdge
+
+// Rung Y_Homm#16
+// Offset 71
+NOP
+
+// Rung Y_Homm#17
+// Offset 72
+NOP
+
+// Rung Y_Homm#18
+// Offset 73
+NOP
+
+// Rung Y_Homm#19
+// Offset 74
+RET
+
+// End of Code Block Y_Homm
+$LGCEND	Y_Homm
+
+// Beginning of Code Block X_Movv
+$LGCMOD	X_Movv
+
+// Rung X_Movv#1
+// Offset 0
+STR	C208
+COPY	0x1	"4 0x0 D169 D100 1"
+COPY	0x1	"4 0x0 1410 D101 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+
+// Rung X_Movv#2
+// Offset 29
+NOP
+
+// Rung X_Movv#3
+// Offset 30
+NOP
+
+// Rung X_Movv#4
+// Offset 31
+NOP
+
+// Rung X_Movv#5
+// Offset 32
+STRLE	N0	0
+ANDLE	N1	0
+AND	C546
+COPY	0x1	"4 0x0 500 D100 1"
+COPY	0x1	"4 0x0 1410 D101 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+
+// Rung X_Movv#6
+// Offset 61
+STR	C208
+MATH	D104	"D100 * D112"
+MATH	D105	"D100 * D113"
+MATH	D118	"(D100 * D112) / D101"
+MATH	D119	"(D100 * D113) / D101"
+
+// Rung X_Movv#7
+// Offset 98
+STR	C208
+COPY	0x1	"4 0x0 D118 D167 1"
+COPY	0x1	"4 0x0 D119 D168 1"
+
+// Rung X_Movv#8
+// Offset 111
+STR	C208
+AND	C207
+SET	Y8
+SET	Y9
+RST	Y60
+
+// Rung X_Movv#9
+// Offset 116
+STR	C53
+ANDN	X8
+AND	C73
+ANDN	X9
+AND	C789
+OUT	C56
+OUT	C76
+
+// Rung X_Movv#10
+// Offset 123
+STRLE	$HSIO_003_CT1.Acc	D167
+OUT	C120
+
+// Rung X_Movv#11
+// Offset 128
+STRLE	$HSIO_003_CT2.Acc	D168
+OUT	C121
+
+// Rung X_Movv#12
+// Offset 133
+STR	C120
+ANDN	C5
+ANDN	C59
+OUT	C122
+
+// Rung X_Movv#13
+// Offset 137
+STR	C121
+ANDN	C5
+ANDN	C79
+OUT	C123
+
+// Rung X_Movv#14
+// Offset 141
+STR	C122
+AND	C123
+OUT	C124
+
+// Rung X_Movv#15
+// Offset 144
+STR	C124
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	800	50
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	800	50
+
+// Rung X_Movv#16
+// Offset 173
+STR	C120
+ANDN	C5
+ANDN	C59
+AND	C676
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	800	50
+
+// Rung X_Movv#17
+// Offset 191
+STR	C121
+ANDN	C5
+ANDN	C79
+AND	C565
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	800	50
+
+// Rung X_Movv#18
+// Offset 209
+STR	C124
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	800	50
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	800	50
+
+// Rung X_Movv#19
+// Offset 238
+STRGE	$HSIO_003_CT1.Acc	D167
+AND	C211
+OUT	C170
+
+// Rung X_Movv#20
+// Offset 244
+STRGE	$HSIO_003_CT2.Acc	D168
+AND	C211
+OUT	C171
+
+// Rung X_Movv#21
+// Offset 250
+STR	C170
+AND	C171
+MOVE	0	D104
+MOVE	0	D105
+MOVE	0	D118
+MOVE	0	D119
+MOVE	0	D116
+MOVE	0	D116
+OUT	Y1
+
+// Rung X_Movv#22
+// Offset 265
+NOP
+
+// Rung X_Movv#23
+// Offset 266
+NOP
+
+// Rung X_Movv#24
+// Offset 267
+RET
+
+// End of Code Block X_Movv
+$LGCEND	X_Movv
+
+// Beginning of Code Block Axis_Ranges_SR
+$LGCMOD	Axis_Ranges_SR
+
+// Rung Axis_Ranges_SR#1
+// Offset 0
+STRLE	$HSIO_003_CT1.Acc	5
+ORGE	$HSIO_003_CT1.Acc	-5
+OUT	C40
+
+// Rung Axis_Ranges_SR#2
+// Offset 9
+STRLE	$HSIO_003_CT2.Acc	5
+ORGE	$HSIO_003_CT2.Acc	-5
+OUT	C60
+
+// Rung Axis_Ranges_SR#3
+// Offset 18
+STRLE	$HSIO_003_CT3.Acc	5
+ORGE	$HSIO_003_CT3.Acc	-5
+OUT	C80
+
+// Rung Axis_Ranges_SR#4
+// Offset 27
+STRLE	$HSIO_003_CT4.Acc	5
+ORGE	$HSIO_003_CT4.Acc	-5
+OUT	C100
+
+// Rung Axis_Ranges_SR#5
+// Offset 36
+STR	C40
+AND	C60
+AND	C80
+AND	C100
+OUT	C35
+
+// Rung Axis_Ranges_SR#6
+// Offset 41
+STRE	$HSIO_003_CT1.Acc	0
+ANDE	$HSIO_003_CT2.Acc	0
+ANDE	$HSIO_003_CT3.Acc	0
+ANDE	$HSIO_003_CT4.Acc	0
+OUT	C3
+
+// Rung Axis_Ranges_SR#7
+// Offset 58
+STR	C31
+AND	C32
+AND	C33
+AND	C34
+ANDN	C5
+OUT	C23
+
+// Rung Axis_Ranges_SR#8
+// Offset 64
+STR	C31
+OR	C32
+OR	C33
+OR	C34
+ANDN	C5
+OUT	C24
+
+// Rung Axis_Ranges_SR#9
+// Offset 70
+NOP
+
+// Rung Axis_Ranges_SR#10
+// Offset 71
+RET
+
+// End of Code Block Axis_Ranges_SR
+$LGCEND	Axis_Ranges_SR
+
+// Beginning of Code Block Scaling_SR
+$LGCMOD	Scaling_SR
+
+// Rung Scaling_SR#1
+// Offset 0
+NOP
+
+// Rung Scaling_SR#2
+// Offset 1
+NOP
+
+// Rung Scaling_SR#3
+// Offset 2
+RET
+
+// End of Code Block Scaling_SR
+$LGCEND	Scaling_SR
+
+// Beginning of Code Block Diagnostics_SR
+$LGCMOD	Diagnostics_SR
+
+// Rung Diagnostics_SR#1
+// Offset 0
+NOP
+
+// Rung Diagnostics_SR#2
+// Offset 1
+NOP
+
+// Rung Diagnostics_SR#3
+// Offset 2
+RET
+
+// End of Code Block Diagnostics_SR
+$LGCEND	Diagnostics_SR
+
+// Beginning of Code Block X_Drp
+$LGCMOD	X_Drp
+
+// Rung X_Drp#1
+// Offset 0
+STR	C57
+AND	C77
+AND	C980
+COPY	0x1	"4 0x0 495 D100 1"
+COPY	0x1	"4 0x0 1410 D101 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+
+// Rung X_Drp#2
+// Offset 31
+STRLE	N0	0
+ANDLE	N1	0
+AND	C546
+COPY	0x1	"4 0x0 500 D100 1"
+COPY	0x1	"4 0x0 1410 D101 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+
+// Rung X_Drp#3
+// Offset 60
+STR	C57
+AND	C77
+AND	C980
+MATH	D104	"D100 * D112"
+MATH	D105	"D100 * D113"
+MATH	D118	"(D100 * D112) / D101"
+MATH	D119	"(D100 * D113) / D101"
+
+// Rung X_Drp#4
+// Offset 99
+STR	C57
+AND	C77
+AND	C980
+COPY	0x1	"4 0x0 D118 D116 1"
+COPY	0x1	"4 0x0 D119 D117 1"
+
+// Rung X_Drp#5
+// Offset 114
+STR	C208
+ANDGT	V53	V50
+OUT	C142
+
+// Rung X_Drp#6
+// Offset 120
+STR	C208
+ANDLT	V53	V50
+OUT	C143
+
+// Rung X_Drp#7
+// Offset 126
+STR	C142
+SET	Y8
+SET	Y9
+
+// Rung X_Drp#8
+// Offset 129
+STR	C143
+RST	Y8
+RST	Y9
+
+// Rung X_Drp#9
+// Offset 132
+NOP
+
+// Rung X_Drp#10
+// Offset 133
+STR	C20
+AND	C57
+AND	C77
+AND	C139
+AND	C980
+SET	Y8
+SET	Y9
+RST	Y60
+
+// Rung X_Drp#11
+// Offset 141
+STR	C53
+ANDN	X8
+AND	C73
+ANDN	X9
+OUT	C56
+OUT	C76
+
+// Rung X_Drp#12
+// Offset 147
+STR	C142
+ANDLT	$HSIO_003_CT1.Acc	D184
+OUT	C55
+
+// Rung X_Drp#13
+// Offset 153
+STR	C142
+ANDLT	$HSIO_003_CT2.Acc	D185
+OUT	C75
+
+// Rung X_Drp#14
+// Offset 159
+STR	C143
+ANDGT	$HSIO_003_CT1.Acc	D184
+OUT	C55
+
+// Rung X_Drp#15
+// Offset 165
+STR	C143
+ANDGT	$HSIO_003_CT2.Acc	D185
+OUT	C75
+
+// Rung X_Drp#16
+// Offset 171
+STRN	C55
+OUT	C877
+
+// Rung X_Drp#17
+// Offset 173
+STR	C55
+ANDN	C5
+ANDN	C59
+AND	C139
+AND	X8
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	800	50
+
+// Rung X_Drp#18
+// Offset 192
+STR	C75
+ANDN	C5
+ANDN	C79
+AND	C139
+AND	X9
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	805	50
+
+// Rung X_Drp#19
+// Offset 211
+STRGE	$HSIO_003_CT1.Acc	D116
+AND	C53
+OUT	C54
+
+// Rung X_Drp#20
+// Offset 217
+STRGE	$HSIO_003_CT2.Acc	D117
+AND	C73
+OUT	C74
+
+// Rung X_Drp#21
+// Offset 223
+STR	C139
+MATH	D226	"D184 + 50"
+MATH	D227	"D185 + 50"
+MATH	D224	"D184 - 50"
+MATH	D225	"D185 - 50"
+
+// Rung X_Drp#22
+// Offset 256
+STR	C139
+AND	X989
+MATH	D219	"D184 - 50"
+MATH	D220	"D185 - 50"
+
+// Rung X_Drp#23
+// Offset 274
+STRGE	$HSIO_003_CT1.Acc	D224
+ANDLE	$HSIO_003_CT1.Acc	D226
+OUT	C177
+
+// Rung X_Drp#24
+// Offset 283
+STRGE	$HSIO_003_CT2.Acc	D225
+ANDLE	$HSIO_003_CT2.Acc	D227
+OUT	C178
+
+// Rung X_Drp#25
+// Offset 292
+NOP
+
+// Rung X_Drp#26
+// Offset 293
+NOP
+
+// Rung X_Drp#27
+// Offset 294
+STR	C54
+AND	C74
+AND	C908
+MOVE	0	D104
+MOVE	0	D105
+MOVE	0	D118
+MOVE	0	D119
+MOVE	0	D116
+MOVE	0	D116
+
+// Rung X_Drp#28
+// Offset 309
+NOP
+
+// Rung X_Drp#29
+// Offset 310
+NOP
+
+// Rung X_Drp#30
+// Offset 311
+RET
+
+// End of Code Block X_Drp
+$LGCEND	X_Drp
+
+// Beginning of Code Block Coord_Map_SR
+$LGCMOD	Coord_Map_SR
+
+// Rung Coord_Map_SR#1
+// Offset 0
+STR	ST1
+AND	C906
+COPY	0x1	"4 0x0 MC0 C203 1 0x0 C201 MC1 1"
+
+// Rung Coord_Map_SR#2
+// Offset 10
+STR	ST1
+AND	X980
+COPY	0x1	"4 0x0 $HSIO_003_CT1.Acc MHR150 1 0x0 $HSIO_003_CT2.Acc MHR151 1 0x0 $HSIO_003_CT3.Acc MHR152 1 0x0 $HSIO_003_CT4.Acc MHR153 1 0x0 X0 MC0 1 0x0 C13 MC1 1 0x0 C6 MI4 1 0x0 C201 MC2 1"
+
+// Rung Coord_Map_SR#3
+// Offset 32
+STR	ST1
+COPY	0x1	"4 0x0 69 GntXMmAxisArr1 1 0x0 122.9 GntXMmAxisArr2 1 0x0 176.7 GntXMmAxisArr3 1 0x0 230.6 GntXMmAxisArr4 1 0x0 284.4 GntXMmAxisArr5 1 0x0 338.3 GntXMmAxisArr6 1 0x0 392.1 GntXMmAxisArr7 1 0x0 446 GntXMmAxisArr8 1 0x0 499.9 GntXMmAxisArr9 1 0x0 553.7 GntXMmAxisArr10 1 0x0 607.6 GntXMmAxisArr11 1 0x0 661.4 GntXMmAxisArr12 1 0x0 715.3 GntXMmAxisArr13 1 0x0 769.1 GntXMmAxisArr14 1 0x0 823 GntXMmAxisArr15 1 0x0 876.9 GntXMmAxisArr16 1 0x0 930.7 GntXMmAxisArr17 1 0x0 984.6 GntXMmAxisArr18 1 0x0 1038.4 GntXMmAxisArr19 1 0x0 1092.3 GntXMmAxisArr20 1 0x0 1146.1 GntXMmAxisArr21 1 0x0 1200 GntXMmAxisArr22 1 0x0 1253.9 GntXMmAxisArr23 1 0x0 1307.7 GntXMmAxisArr24 1 0x0 1361.6 GntXMmAxisArr25 1 0x0 1415.4 GntXMmAxisArr26 1 0x0 1469.3 GntXMmAxisArr27 1"
+
+// Rung Coord_Map_SR#4
+// Offset 114
+STR	ST1
+COPY	0x1	"4 0x0 495 GntXOneCntArr1 1 0x0 1000 GntXOneCntArr2 1 0x0 1387 GntXOneCntArr3 1 0x0 1761 GntXOneCntArr4 1 0x0 2236 GntXOneCntArr5 1 0x0 2553 GntXOneCntArr6 1 0x0 2885 GntXOneCntArr7 1 0x0 3330 GntXOneCntArr8 1 0x0 3690 GntXOneCntArr9 1 0x0 4000 GntXOneCntArr10 1 0x0 4411 GntXOneCntArr11 1 0x0 4742 GntXOneCntArr12 1 0x0 5117 GntXOneCntArr13 1 0x0 5477 GntXOneCntArr14 1 0x0 5915 GntXOneCntArr15 1 0x0 6283 GntXOneCntArr16 1 0x0 6643 GntXOneCntArr17 1 0x0 6888 GntXOneCntArr18 1 0x0 7413 GntXOneCntArr19 1 0x0 7910 GntXOneCntArr20 1 0x0 8134 GntXOneCntArr21 1 0x0 8411 GntXOneCntArr22 1 0x0 8911 GntXOneCntArr23 1 0x0 9307 GntXOneCntArr24 1 0x0 9653 GntXOneCntArr25 1 0x0 10019 GntXOneCntArr26 1 0x0 10401 GntXOneCntArr27 1"
+
+// Rung Coord_Map_SR#5
+// Offset 173
+STR	ST1
+COPY	0x1	"4 0x0 1374 GntXTwoCntArr1 1 0x0 2300 GntXTwoCntArr2 1 0x0 2880 GntXTwoCntArr3 1 0x0 3576 GntXTwoCntArr4 1 0x0 4855 GntXTwoCntArr5 1 0x0 5557 GntXTwoCntArr6 1 0x0 6640 GntXTwoCntArr7 1 0x0 7579 GntXTwoCntArr8 1 0x0 8679 GntXTwoCntArr9 1 0x0 9600 GntXTwoCntArr10 1 0x0 11036 GntXTwoCntArr11 1 0x0 12396 GntXTwoCntArr12 1 0x0 12816 GntXTwoCntArr13 1 0x0 14253 GntXTwoCntArr14 1 0x0 14996 GntXTwoCntArr15 1 0x0 16019 GntXTwoCntArr16 1 0x0 17233 GntXTwoCntArr17 1 0x0 18313 GntXTwoCntArr18 1 0x0 19255 GntXTwoCntArr19 1 0x0 20559 GntXTwoCntArr20 1 0x0 21754 GntXTwoCntArr21 1 0x0 22517 GntXTwoCntArr22 1 0x0 23477 GntXTwoCntArr23 1 0x0 24816 GntXTwoCntArr24 1 0x0 25655 GntXTwoCntArr25 1 0x0 26516 GntXTwoCntArr26 1 0x0 27457 GntXTwoCntArr27 1"
+
+// Rung Coord_Map_SR#6
+// Offset 232
+STR	ST1
+COPY	0x1	"4 0x0 3505 GntYAxisMmArr1 1 0x0 4167 GntYAxisMmArr2 1 0x0 5645 GntYAxisMmArr3 1 0x0 6307 GntYAxisMmArr4 1 0x0 7267 GntYAxisMmArr5 1 0x0 8427 GntYAxisMmArr6 1 0x0 9893 GntYAxisMmArr7 1 0x0 10446 GntYAxisMmArr8 1 0x0 11427 GntYAxisMmArr9 1 0x0 12567 GntYAxisMmArr10 1 0x0 13687 GntYAxisMmArr11 1 0x0 14706 GntYAxisMmArr12 1 0x0 15407 GntYAxisMmArr13 1 0x0 16567 GntYAxisMmArr14 1 0x0 17346 GntYAxisMmArr15 1 0x0 18647 GntYAxisMmArr16 1 0x0 19847 GntYAxisMmArr17 1 0x0 20987 GntYAxisMmArr18 1 0x0 21967 GntYAxisMmArr19 1 0x0 22967 GntYAxisMmArr20 1"
+
+// Rung Coord_Map_SR#7
+// Offset 277
+STR	ST1
+AND	X789
+COPY	0x1	"4 0x0 $HSIO_003_CT1.Acc MIR51 1 0x0 $HSIO_003_CT2.Acc MIR52 1 0x0 $HSIO_003_CT3.Acc MIR53 1 0x0 $HSIO_003_CT4.Acc MIR54 1"
+
+// Rung Coord_Map_SR#8
+// Offset 291
+NOP
+
+// Rung Coord_Map_SR#9
+// Offset 292
+NOP
+
+// Rung Coord_Map_SR#10
+// Offset 293
+RET
+
+// End of Code Block Coord_Map_SR
+$LGCEND	Coord_Map_SR
+
+// Beginning of Code Block Modb_SR
+$LGCMOD	Modb_SR
+
+// Rung Modb_SR#1
+// Offset 0
+STRN	X0
+SET	C145
+
+// Rung Modb_SR#2
+// Offset 2
+STR	X0
+RST	C145
+
+// Rung Modb_SR#3
+// Offset 4
+STRN	X8
+ANDN	X9
+AND	C905
+COPY	0x1	"4 0x0 0 D151 1"
+
+// Rung Modb_SR#4
+// Offset 13
+STR	ST1
+COPY	0x1	"4 0x0 X0 MC1 1 0x0 C145 MC2 1 0x0 C6 MC3 1 0x0 C162 MC4 1 0x0 C201 MC5 1 0x0 C203 MC6 1 0x0 C37 MC7 1"
+
+// Rung Modb_SR#5
+// Offset 32
+STR	ST1
+COPY	0x1	"4 0x0 $HSIO_003_CT1.Acc MHR151 1 0x0 $HSIO_003_CT2.Acc MHR152 1 0x0 $HSIO_003_CT3.Acc MHR153 1 0x0 $HSIO_003_CT4.Acc MHR154 1 0x0 MHR197 D195 1"
+
+// Rung Modb_SR#6
+// Offset 47
+STR	ST1
+COPY	0x1	"4 0x0 MHR50 V50 1 0x0 MHR51 V51 1 0x0 MHR52 V52 1 0x0 MHR53 V53 1 0x0 MHR54 V54 1 0x0 MHR55 V55 1 0x0 MHR211 D211 1 0x0 MHR212 D212 1 0x0 MHR213 D213 1 0x0 MHR214 D214 1 0x0 MHR215 D215 1"
+
+// Rung Modb_SR#7
+// Offset 74
+RET
+
+// End of Code Block Modb_SR
+$LGCEND	Modb_SR
+
+// Beginning of Code Block PLC_States_SR
+$LGCMOD	PLC_States_SR
+
+// Rung PLC_States_SR#1
+// Offset 0
+STR	C58
+AND	C78
+AND	C98
+AND	C118
+AND	C454
+OUT	C16
+
+// Rung PLC_States_SR#2
+// Offset 6
+STR	True_Calib_STG.Running
+OUT	C160
+
+// Rung PLC_States_SR#3
+// Offset 8
+STR	START_STG.Running
+OUT	C161
+
+// Rung PLC_States_SR#4
+// Offset 10
+STR	C160
+OR	C161
+OUT	C162
+
+// Rung PLC_States_SR#5
+// Offset 13
+STR	C54
+AND	C74
+AND	C94
+AND	C114
+ANDN	C6
+ANDN	X8
+ANDN	X9
+ANDN	X10
+ANDN	X11
+AND	X980
+OUT	C201
+
+// Rung PLC_States_SR#6
+// Offset 24
+NOP
+
+// Rung PLC_States_SR#7
+// Offset 25
+RET
+
+// End of Code Block PLC_States_SR
+$LGCEND	PLC_States_SR
+
+// Beginning of Code Block Heartbeat_SR
+$LGCMOD	Heartbeat_SR
+
+// Rung Heartbeat_SR#1
+// Offset 0
+STR	ST4
+ANDNE	D195	D199
+SET	C175
+MOVE	0	D198
+MOVE	D195	D199
+
+// Rung Heartbeat_SR#2
+// Offset 10
+STR	ST4
+ANDE	D195	D199
+MATH	D198	"D198 + 1"
+
+// Rung Heartbeat_SR#3
+// Offset 23
+STRGE	D198	3
+ANDE	D195	D199
+RST	C175
+MOVE	3	D198
+MOVE	0	D190
+
+// Rung Heartbeat_SR#4
+// Offset 36
+RET
+
+// End of Code Block Heartbeat_SR
+$LGCEND	Heartbeat_SR
+
+// Beginning of Code Block Y_Drp
+$LGCMOD	Y_Drp
+
+// Rung Y_Drp#1
+// Offset 0
+STR	C93
+COPY	0x1	"4 0x0 3462 D121 1"
+
+// Rung Y_Drp#2
+// Offset 7
+STR	C208
+ANDLT	V54	V51
+OUT	C150
+
+// Rung Y_Drp#3
+// Offset 13
+STR	C208
+ANDGT	V54	V51
+OUT	C151
+
+// Rung Y_Drp#4
+// Offset 19
+STR	C150
+SET	Y10
+
+// Rung Y_Drp#5
+// Offset 21
+STR	C151
+RST	Y10
+
+// Rung Y_Drp#6
+// Offset 23
+STR	C20
+AND	C93
+AND	C908
+RST	Y10
+
+// Rung Y_Drp#7
+// Offset 27
+NOP
+
+// Rung Y_Drp#8
+// Offset 28
+STR	C93
+ANDN	X10
+OUT	C96
+
+// Rung Y_Drp#9
+// Offset 31
+STRNE	$HSIO_003_CT3.Acc	D189
+AND	X980
+OUT	C95
+
+// Rung Y_Drp#10
+// Offset 37
+STR	C150
+ANDGT	$HSIO_003_CT3.Acc	D189
+OUT	C220
+
+// Rung Y_Drp#11
+// Offset 43
+STR	C151
+ANDLT	$HSIO_003_CT3.Acc	D189
+OUT	C221
+
+// Rung Y_Drp#12
+// Offset 49
+STR	C220
+OR	C221
+OUT	C95
+
+// Rung Y_Drp#13
+// Offset 52
+STRN	C95
+AND	C908
+OUT	C877
+
+// Rung Y_Drp#14
+// Offset 55
+STR	C95
+ANDN	C5
+ANDN	C99
+AND	C139
+AND	X10
+PWMOUT	@HSIO_002_PWM3	$HSIO_002_PWM3	Y20	1000	50
+
+// Rung Y_Drp#15
+// Offset 74
+STRGE	$HSIO_003_CT3.Acc	D187
+AND	C211
+OUT	C172
+
+// Rung Y_Drp#16
+// Offset 80
+STR	C139
+MATH	D221	"D189 - 60"
+MATH	D223	"D189 + 65"
+MATH	D222	"D189 - 65"
+
+// Rung Y_Drp#17
+// Offset 105
+STRGE	$HSIO_003_CT3.Acc	D222
+ANDLE	$HSIO_003_CT3.Acc	D223
+OUT	C219
+
+// Rung Y_Drp#18
+// Offset 114
+STRE	$HSIO_003_CT3.Acc	D189
+AND	C139
+AND	C177
+AND	X989
+OUT	C125
+
+// Rung Y_Drp#19
+// Offset 122
+STR	C139
+AND	C177
+AND	X980
+MATH	D205	"D189 - 30"
+
+// Rung Y_Drp#20
+// Offset 133
+STRGE	$HSIO_003_CT3.Acc	D205
+AND	C139
+AND	X980
+OUT	C216
+
+// Rung Y_Drp#21
+// Offset 140
+NOP
+
+// Rung Y_Drp#22
+// Offset 141
+NOP
+
+// Rung Y_Drp#23
+// Offset 142
+RET
+
+// End of Code Block Y_Drp
+$LGCEND	Y_Drp
+
+// Beginning of Code Block $Main
+$PRGRM	$Main
+
+// Rung $Main#1
+// Offset 0
+#BEGIN FMT_COMMENT 
+"Project: Automated Shipping Dock Gantry<br>"
+"Date: 17 December, 2025"
+#END
+
+NOP
+
+// Rung $Main#2
+// Offset 1
+STR	ST0
+CALL	Reset_SR	0x1	DST511	"3"	"3"
+
+// Rung $Main#3
+// Offset 9
+STR	ST1
+CALL	Modb_SR	0x1	DST511	"3"	"3"
+
+// Rung $Main#4
+// Offset 17
+STR	ST1
+CALL	Coord_Map_SR	0x1	DST511	"3"	"3"
+
+// Rung $Main#5
+// Offset 25
+STR	ST1
+CALL	PLC_States_SR	0x1	DST511	"3"	"3"
+
+// Rung $Main#6
+// Offset 33
+STR	ST1
+ONDTMR	T6	1000	C194
+
+// Rung $Main#7
+// Offset 37
+STR	T6.Done
+SET	C176
+RSTT	T6
+
+// Rung $Main#8
+// Offset 40
+STR	C176
+CALL	Heartbeat_SR	0x1	DST511	"3"	"3"
+
+// Rung $Main#9
+// Offset 48
+NOP
+
+// Rung $Main#10
+// Offset 49
+STR	ST1
+AND	X900
+COPY	0x1	"4 0x0 MHR150 V150 1"
+
+// Rung $Main#11
+// Offset 57
+STR	ST1
+AND	C960
+COPY	0x1	"4 0x0 $HSIO_003_CT1.Acc MHR150 1 0x0 $HSIO_003_CT2.Acc MHR151 1 0x0 $HSIO_003_CT3.Acc MHR152 1 0x0 $HSIO_003_CT4.Acc MHR153 1 0x0 X0 MC0 1 0x0 C13 MC1 1 0x0 C6 MI4 1 0x0 C201 MC2 1"
+
+// Rung $Main#12
+// Offset 79
+STR	ST1
+AND	C960
+COPY	0x1	"4 0x0 X0 MI0 1 0x0 C6 MI1 1"
+
+// Rung $Main#13
+// Offset 89
+STR	ST1
+AND	C960
+COPY	0x1	"4 0x0 MC0 C203 1 0x0 C201 MC1 1"
+
+// Rung $Main#14
+// Offset 99
+STR	ST1
+JSONBUILD	0x0	"4 ""x1"" 0x0 149 DST511 ""y1"" 0x0 1374 DST511"	SS0	DST511	1	DST511
+
+// Rung $Main#15
+// Offset 108
+STR	ST1
+AND	C955
+COPY	0x1	"4 0x0 3505 GntYAxisMmArr1 1 0x0 7685 GntYAxisMmArr2 1 0x0 11805 GntYAxisMmArr3 1 0x0 16205 GntYAxisMmArr4 1 0x0 20185 GntYAxisMmArr5 1"
+
+// Rung $Main#16
+// Offset 124
+STR	ST1
+AND	X90
+COPY	0x1	"4 0x0 149 AxisBl0.X_Axis 1"
+
+// Rung $Main#17
+// Offset 132
+STRN	X0
+ORN	X2
+ANDN	X1
+OUT	Y0
+OUT	Y5
+EMAIL	@Gantry_Dav_Smtp	"""davisonyeas1@gmail.com"""	""""""	""""""	"""Emergency STOP button pressed"""	0x3	"C610"	0x0	C611	C612	@RamFS	"""Log_file_for_Gantry.txt"""
+
+// Rung $Main#18
+// Offset 173
+STRN	X0
+OR	C6
+STR	X8
+OR	X9
+OR	X10
+OR	X11
+ANDSTR
+OUT	C6
+
+// Rung $Main#19
+// Offset 181
+STRPD	X1
+OR	C13
+AND	X0
+STR	X8
+OR	X9
+OR	X10
+OR	X11
+ANDSTR
+OUT	C13
+
+// Rung $Main#20
+// Offset 191
+STR	X0
+OR	X2
+AND	C6
+OUT	C5
+
+// Rung $Main#21
+// Offset 195
+STR	ST0
+AND	C107
+AND	C87
+AND	C67
+AND	C47
+SET	C21
+MQTTPUB	@test_dav_mqtt	0x1	1000	SS0	"3 0x1000 ""top_level/field/"" C16"	0x0	C4	C8	DST511
+
+// Rung $Main#22
+// Offset 216
+STR	C13
+RST	C6
+RST	C7
+CALL	Z_Hom	0x1	DST511	"3"	"3"
+
+// Rung $Main#23
+// Offset 226
+STR	C13
+AND	C113
+CALL	X1_Hom	0x1	DST511	"3"	"3"
+CALL	X2_Hom	0x1	DST511	"3"	"3"
+CALL	Y_Hom	0x1	DST511	"3"	"3"
+
+// Rung $Main#24
+// Offset 249
+STR	ST0
+AND	C798
+CALL	Reset_SR	0x1	DST511	"3"	"3"
+
+// Rung $Main#25
+// Offset 258
+STR	C5
+ANDN	ST0
+STRN	X0
+ORN	X2
+ANDSTR
+OUT	Y5
+OUT	Y0
+
+// Rung $Main#26
+// Offset 265
+STR	ST1
+OUT	Y6
+
+// Rung $Main#27
+// Offset 267
+STR	ST1
+OUT	Y7
+
+// Rung $Main#28
+// Offset 269
+NOP
+
+// Rung $Main#29
+// Offset 270
+HSCNT	@HSIO_003_CT1	$HSIO_003_CT1	X48	X49	ST1023	ST1023	ST1023	DST511
+
+// Rung $Main#30
+// Offset 281
+HSCNT	@HSIO_003_CT2	$HSIO_003_CT2	X50	X51	ST1023	ST1023	ST1023	DST511
+
+// Rung $Main#31
+// Offset 292
+HSCNT	@HSIO_003_CT3	$HSIO_003_CT3	X52	X53	ST1023	ST1023	ST1023	DST511
+
+// Rung $Main#32
+// Offset 303
+HSCNT	@HSIO_003_CT4	$HSIO_003_CT4	X54	X55	ST1023	ST1023	ST1023	DST511
+
+// Rung $Main#33
+// Offset 314
+STR	ST1
+COPY	0x1	"4 0x0 $HSIO_003_CT1.Acc D150 1 0x0 $HSIO_003_CT2.Acc D151 1 0x0 $HSIO_003_CT3.Acc D152 1 0x0 $HSIO_003_CT4.Acc D153 1"
+
+// Rung $Main#34
+// Offset 327
+STR	ST1
+COPY	0x1	"4 0x0 9120 D166 1"
+COPY	0x1	"4 0x0 25000 D165 1"
+COPY	0x1	"4 0x0 30010 D164 1"
+COPY	0x1	"4 0x0 10720 D163 1"
+
+// Rung $Main#35
+// Offset 352
+STR	ST1
+MATH	C119	"$HSIO_003_CT4.Acc >= D166"
+MATH	C99	"$HSIO_003_CT3.Acc >= D165"
+MATH	C79	"$HSIO_003_CT2.Acc >= D164"
+MATH	C59	"$HSIO_003_CT1.Acc >= D163"
+MATH	C132	"$HSIO_003_CT4.Acc >= D166"
+
+// Rung $Main#36
+// Offset 393
+STR	ST1
+AND	C960
+MATH	C119	"$HSIO_003_CT4.Acc >= D166"
+
+// Rung $Main#37
+// Offset 403
+STRGE	$HSIO_003_CT4.Acc	9100
+AND	C687
+AND	C789
+OUT	C137
+INTCONFIG	0x1002	Z_Max_Thr	"5 1 0x0 0x3 0x2 D166"	0x3
+
+// Rung $Main#38
+// Offset 414
+STRGE	$HSIO_003_CT4.Acc	915
+AND	C676
+AND	C789
+AND	C960
+RSTI	Y22
+
+// Rung $Main#39
+// Offset 422
+STR	ST1
+CALL	Axis_Ranges_SR	0x1	DST511	"3"	"3"
+
+// Rung $Main#40
+// Offset 430
+STR	ST1
+STR	CT0.DnDone
+FREQCNT	CT0	100	0x1	0x0	0.0	1.0	R0
+
+// Rung $Main#41
+// Offset 439
+STRND	X8
+ANDND	X9
+ANDLE	N0	0
+ANDLE	N1	0
+AND	C454
+COPY	0x1	"4 0x0 500 D100 1"
+COPY	0x1	"4 0x0 1410 D101 1"
+COPY	0x1	"4 0x0 10720 D112 1 0x0 30336 D113 1"
+
+// Rung $Main#42
+// Offset 472
+STR	ST1
+MOVE	7.6028	D134
+MOVE	21.5156	D135
+
+// Rung $Main#43
+// Offset 479
+STR	C47
+AND	C67
+AND	C454
+MATH	D104	"D100 * D112"
+MATH	D105	"D100 * D113"
+
+// Rung $Main#44
+// Offset 498
+STR	ST1
+AND	C565
+OUT	C676
+
+// Rung $Main#45
+// Offset 501
+STRN	X8
+ANDN	X9
+ANDN	X10
+ANDN	X11
+OUT	C37
+
+// Rung $Main#46
+// Offset 506
+STR	C211
+AND	C119
+AND	C960
+RST	C131
+RST	C138
+
+// Rung $Main#47
+// Offset 511
+STR	C211
+AND	C99
+RST	C95
+
+// Rung $Main#48
+// Offset 514
+STR	ST1
+RUN	START_STG
+
+// Rung $Main#49
+// Offset 517
+STR	ST1
+COPY	0x0	"4 0x0 -7769 MHR2:D 1 0x0 20960 MHR4:D 1 0x0 -13780 MHR6:D 1 0x0 4500 MHR8:D 1"
+
+// Rung $Main#50
+// Offset 531
+STR	ST1
+COPY	0x0	"4 0x0 MHR2:D N200 1 0x0 MHR4:D N201 1 0x0 MHR6:D N202 1 0x0 MHR8:D N203 1"
+
+// Rung $Main#51
+// Offset 545
+STR	ST6
+AND	C676
+COPY	0x1	"4 0x0 2000 D203 1 0x0 9000 D204 1"
+
+// Rung $Main#52
+// Offset 555
+STR	C113
+AND	C211
+AND	C172
+AND	C878
+COPY	0x1	"4 0x0 9092 D120 1"
+
+// Rung $Main#53
+// Offset 565
+STR	ST1
+CALL	Lights	0x1	DST511	"3"	"3"
+
+// End of Code Block $Main
+$PGMEND	$Main
+
+// Beginning of Code Block STG_INIT
+$PRGRM	STG_INIT
+
+// Rung STG_INIT#1
+// Offset 0
+STRN	X2
+ORN	X0
+OUT	Y0
+OUT	Y5
+
+// Rung STG_INIT#2
+// Offset 4
+STRND	X8
+AND	C500
+RST	$HSIO_002_PWM1.EnableOutput
+
+// Rung STG_INIT#3
+// Offset 8
+STR	X9
+RST	$HSIO_002_PWM2.EnableOutput
+
+// Rung STG_INIT#4
+// Offset 10
+STRND	X10
+RST	$HSIO_002_PWM3.EnableOutput
+
+// Rung STG_INIT#5
+// Offset 13
+STRND	X11
+RST	$HSIO_002_PWM4.EnableOutput
+
+// Rung STG_INIT#6
+// Offset 16
+STR	ST1
+CALL	SR_Read_Encoders	0x1	DST511	"3"	"3"
+
+// Rung STG_INIT#7
+// Offset 24
+NOP
+
+// Rung STG_INIT#8
+// Offset 25
+#BEGIN FMT_COMMENT 
+"Idle"
+#END
+
+SG	STG_INIT.S0
+
+// Rung STG_INIT#9
+// Offset 27
+STR	ST1
+OUT	Y2
+ONDTMR	T0	2000	C100
+
+// Rung STG_INIT#10
+// Offset 32
+STR	T0.Done
+JMP	STG_INIT.S1
+
+// Rung STG_INIT#11
+// Offset 34
+SG	STG_INIT.S1
+
+// Rung STG_INIT#12
+// Offset 36
+STR	ST1
+STR	X2
+OR	X0
+ANDSTR
+OUT	Y3
+
+// Rung STG_INIT#13
+// Offset 41
+STR	X1
+AND	X2
+OUT	C2
+
+// Rung STG_INIT#14
+// Offset 44
+STRE	N0	0
+ANDE	N1	0
+ANDE	N2	0
+ANDE	N3	0
+OUT	C50
+
+// Rung STG_INIT#15
+// Offset 61
+STRPD	C2
+JMP	STG_INIT.S2
+
+// Rung STG_INIT#16
+// Offset 64
+SG	STG_INIT.S2
+
+// Rung STG_INIT#17
+// Offset 66
+STR	C2
+OUT	C30
+CALL	Go_Home_Pose	0x1	DST511	"3"	"3"
+
+// Rung STG_INIT#18
+// Offset 75
+STRE	N0	0
+ANDE	N1	0
+ANDE	N2	0
+ANDE	N3	0
+OUT	C3
+
+// Rung STG_INIT#19
+// Offset 92
+#BEGIN FMT_COMMENT 
+"PLC Ready, establishes Modbus Connection"
+#END
+
+STR	ST1
+AND	C3
+MWX	@Gantry_Mod_Da	-1062730939	502	255	5	1	1	C45	0x0	0	0x0	C42	C43	DST511
+
+// Rung STG_INIT#20
+// Offset 107
+STR	ST1
+MRX	@Gantry_Mod_Da	-1062730939	502	255	3	2	1	N100	0x0	0	0x0	C100	C101	DST511
+
+// Rung STG_INIT#21
+// Offset 121
+STR	C45
+OUT	C46
+
+// Rung STG_INIT#22
+// Offset 123
+STR	C3
+JMP	STG_INIT.S3
+
+// Rung STG_INIT#23
+// Offset 125
+SG	STG_INIT.S3
+
+// End of Code Block STG_INIT
+$PGMEND	STG_INIT
+
+// Beginning of Code Block Find_Home
+$PRGRM	Find_Home
+
+// Rung Find_Home#1
+// Offset 0
+MATH	N150	"$HSIO_003_CT1.Acc + 10"
+MATH	N151	"$HSIO_003_CT1.Acc - 10"
+MATH	N152	"$HSIO_003_CT2.Acc + 10"
+MATH	N153	"$HSIO_003_CT2.Acc - 10"
+MATH	N154	"$HSIO_003_CT3.Acc + 10"
+MATH	N155	"$HSIO_003_CT3.Acc - 10"
+MATH	C156	"$HSIO_003_CT4.Acc + 10"
+MATH	C157	"$HSIO_003_CT4.Acc - 10"
+
+// Rung Find_Home#2
+// Offset 64
+STRGT	$HSIO_003_CT1.Acc	N150
+ORLT	$HSIO_003_CT1.Acc	N151
+OUT	C300
+
+// Rung Find_Home#3
+// Offset 73
+STRGT	$HSIO_003_CT2.Acc	N152
+ORLT	$HSIO_003_CT2.Acc	153
+OUT	C301
+
+// Rung Find_Home#4
+// Offset 82
+STRGT	$HSIO_003_CT3.Acc	N154
+ORLT	$HSIO_003_CT3.Acc	N155
+OUT	C302
+
+// Rung Find_Home#5
+// Offset 91
+STRGT	$HSIO_003_CT4.Acc	N156
+ORLT	$HSIO_003_CT4.Acc	N157
+OUT	C303
+
+// Rung Find_Home#6
+// Offset 100
+NOP
+
+// Rung Find_Home#7
+// Offset 101
+NOP
+
+// Rung Find_Home#8
+// Offset 102
+STRE	N200	$HSIO_003_CT1.Acc
+ORE	N201	$HSIO_003_CT2.Acc
+ANDN	ST1
+OUT	C400
+PWMOUT	@HSIO_002_PWM1	$HSIO_002_PWM1	Y16	1	0
+PWMOUT	@HSIO_002_PWM2	$HSIO_002_PWM2	Y18	1	0
+
+// Rung Find_Home#9
+// Offset 140
+NOP
+
+// Rung Find_Home#10
+// Offset 141
+NOP
+
+// Rung Find_Home#11
+// Offset 142
+STRGE	N203	$HSIO_003_CT3.Acc
+ANDN	ST1
+PWMOUT	@HSIO_002_PWM3	$HSIO_002_PWM3	Y20	1	0
+
+// End of Code Block Find_Home
+$PGMEND	Find_Home
+
+// Beginning of Code Block START_STG
+$PRGRM	START_STG
+
+// Rung START_STG#1
+// Offset 0
+SG	START_STG.S0
+
+// Rung START_STG#2
+// Offset 2
+STR	ST1
+SET	C17
+
+// Rung START_STG#3
+// Offset 4
+STR	ST1
+OUT	Y5
+ONDTMR	T2	1000	C0
+
+// Rung START_STG#4
+// Offset 9
+STR	T2.Done
+JMP	START_STG.S1
+
+// Rung START_STG#5
+// Offset 11
+SG	START_STG.S1
+
+// Rung START_STG#6
+// Offset 13
+STR	ST1
+SET	C17
+
+// Rung START_STG#7
+// Offset 15
+STR	C17
+SET	C26
+RST	C25
+
+// Rung START_STG#8
+// Offset 18
+STR	C26
+JMP	START_STG.S2
+
+// Rung START_STG#9
+// Offset 20
+SG	START_STG.S2
+
+// Rung START_STG#10
+// Offset 22
+STR	X0
+OR	X2
+ANDPD	X1
+SET	C26
+RST	C25
+
+// Rung START_STG#11
+// Offset 28
+STR	X1
+JMP	START_STG.S3
+OUT	C2
+
+// Rung START_STG#12
+// Offset 31
+STR	C2
+JMP	START_STG.S3
+
+// Rung START_STG#13
+// Offset 33
+SG	START_STG.S3
+
+// Rung START_STG#14
+// Offset 35
+STR	ST1
+OR	C9
+RUN	True_Calib_STG
+
+// Rung START_STG#15
+// Offset 39
+STR	C57
+AND	C77
+AND	C93
+AND	C113
+OUT	C21
+
+// Rung START_STG#16
+// Offset 44
+STR	C21
+AND	C252
+JMP	START_STG.S4
+
+// Rung START_STG#17
+// Offset 47
+SG	START_STG.S4
+
+// Rung START_STG#18
+// Offset 49
+STR	ST1
+AND	C989
+OUT	C204
+
+// Rung START_STG#19
+// Offset 52
+STR	C203
+OR	C204
+OR	C205
+OUT	C208
+RST	C17
+
+// Rung START_STG#20
+// Offset 57
+STRGE	D214	1
+OUT	C208
+RST	C17
+
+// Rung START_STG#21
+// Offset 63
+STR	C208
+RUN	RECV_STG
+OUT	C136
+
+// Rung START_STG#22
+// Offset 67
+STR	C136
+JMP	START_STG.S7
+
+// Rung START_STG#23
+// Offset 69
+SG	START_STG.S7
+
+// Rung START_STG#24
+// Offset 71
+NOP
+
+// Rung START_STG#25
+// Offset 72
+STR	ST1
+EXIT
+
+// Rung START_STG#26
+// Offset 74
+NOP
+
+// Rung START_STG#27
+// Offset 75
+STR	C208
+AND	C567
+OUT	C207
+
+// Rung START_STG#28
+// Offset 78
+STR	C207
+MWX	@Gantry_Mod_Da	-1062731002	502	255	5	1	1	C807	0x0	0	0x0	C620	C621	DST511
+OUT	C209
+
+// Rung START_STG#29
+// Offset 93
+STR	C209
+RUN	RECV_STG
+
+// Rung START_STG#30
+// Offset 96
+STR	C209
+AND	X980
+COPY	0x1	"4 0x0 67 D169 1 0x0 150 D170 1"
+RUN	PICK_UP_STG
+
+// Rung START_STG#31
+// Offset 108
+STR	C567
+JMP	START_STG.S6
+
+// Rung START_STG#32
+// Offset 110
+SG	START_STG.S6
+
+// Rung START_STG#33
+// Offset 112
+NOP
+
+// Rung START_STG#34
+// Offset 113
+STREXPLT	DST511	DST511	"$HSIO_003_CT3.Acc"	"-5"
+OUT	C92
+
+// Rung START_STG#35
+// Offset 123
+STR	C27
+CALL	Y_Calibration	0x1	DST511	"3"	"3"
+CALL	X_Calibration	0x1	DST511	"3"	"3"
+
+// Rung START_STG#36
+// Offset 138
+STR	C54
+AND	C74
+AND	C94
+CALL	Z_Calibration	0x1	DST511	"3"	"3"
+
+// Rung START_STG#37
+// Offset 148
+STR	C47
+AND	C67
+AND	C87
+AND	C107
+OUT	C3
+
+// Rung START_STG#38
+// Offset 153
+STR	C54
+AND	C74
+AND	C94
+AND	C114
+JMP	START_STG.S5
+RST	C54
+RST	C74
+
+// Rung START_STG#39
+// Offset 160
+SG	START_STG.S5
+
+// Rung START_STG#40
+// Offset 162
+STR	C58
+AND	C78
+AND	C98
+AND	C118
+OUT	C19
+
+// End of Code Block START_STG
+$PGMEND	START_STG
+
+// Beginning of Code Block HOME_STG
+$PRGRM	HOME_STG
+
+// Rung HOME_STG#1
+// Offset 0
+SG	HOME_STG.S0
+
+// Rung HOME_STG#2
+// Offset 2
+STR	ST1
+SET	C26
+RST	C25
+RST	Y1
+SET	Y2
+
+// Rung HOME_STG#3
+// Offset 7
+STR	C26
+RST	C21
+RST	C22
+
+// Rung HOME_STG#4
+// Offset 10
+STR	C26
+JMP	HOME_STG.S1
+
+// Rung HOME_STG#5
+// Offset 12
+SG	HOME_STG.S1
+
+// Rung HOME_STG#6
+// Offset 14
+STR	ST1
+SET	C20
+CALL	Z_Hom	0x1	DST511	"3"	"3"
+
+// Rung HOME_STG#7
+// Offset 23
+STR	C113
+CALL	X1_Hom	0x1	DST511	"3"	"3"
+CALL	X2_Hom	0x1	DST511	"3"	"3"
+CALL	Y_Hom	0x1	DST511	"3"	"3"
+
+// Rung HOME_STG#8
+// Offset 45
+STRN	X8
+ANDN	X9
+ANDN	X10
+ANDN	X11
+JMP	HOME_STG.S2
+
+// Rung HOME_STG#9
+// Offset 50
+SG	HOME_STG.S2
+
+// Rung HOME_STG#10
+// Offset 52
+STR	ST1
+OUT	Y2
+OUT	C27
+
+// Rung HOME_STG#11
+// Offset 55
+STR	C27
+AND	C546
+OUT	Y3
+
+// Rung HOME_STG#12
+// Offset 58
+NOP
+
+// Rung HOME_STG#13
+// Offset 59
+STR	C676
+EXIT
+
+// End of Code Block HOME_STG
+$PGMEND	HOME_STG
+
+// Beginning of Code Block RECV_STG
+$PRGRM	RECV_STG
+
+// Rung RECV_STG#1
+// Offset 0
+STR	ST1
+OUT	C38
+
+// Rung RECV_STG#2
+// Offset 2
+STR	ST1
+STR	C203
+CNT	CT0	0
+
+// Rung RECV_STG#3
+// Offset 6
+SG	RECV_STG.S0
+
+// Rung RECV_STG#4
+// Offset 8
+STRGT	D172	0
+AND	C905
+RST	C38
+
+// Rung RECV_STG#5
+// Offset 14
+STR	C38
+JMP	RECV_STG.S1
+
+// Rung RECV_STG#6
+// Offset 16
+SG	RECV_STG.S1
+
+// Rung RECV_STG#7
+// Offset 18
+STR	C252
+OR	C215
+ANDN	C217
+ANDN	C6
+AND	C175
+SET	C201
+SET	C228
+
+// Rung RECV_STG#8
+// Offset 25
+STRE	C203	1
+RST	C204
+
+// Rung RECV_STG#9
+// Offset 30
+STR	C203
+OR	C204
+OR	C205
+OUT	C208
+OUT	C207
+
+// Rung RECV_STG#10
+// Offset 35
+STRGE	D214	1
+OUT	C208
+RST	C17
+
+// Rung RECV_STG#11
+// Offset 41
+STR	C208
+OUT	C206
+RST	C17
+
+// Rung RECV_STG#12
+// Offset 44
+STR	C207
+MWX	@Gantry_Mod_Da	-1062731002	502	255	5	1	1	C201	0x0	0	0x0	C620	C621	DST511
+OUT	C209
+
+// Rung RECV_STG#13
+// Offset 59
+STR	C206
+AND	C905
+AND	X980
+COPY	0x1	"4 0x0 GntYAxisMmArr[V150] D26 1"
+
+// Rung RECV_STG#14
+// Offset 69
+STR	C209
+AND	C905
+AND	X980
+COPY	0x1	"4 0x0 69 D41 1 0x0 150 D26 1 0x0 1200 D43 1 0x0 150 D34 1"
+RUN	PICK_UP_STG
+
+// Rung RECV_STG#15
+// Offset 86
+STR	C206
+AND	C989
+AND	X980
+COPY	0x1	"4 0x0 MHR50 V50 1 0x0 MHR51 V51 1 0x0 MHR52 V52 1 0x0 MHR53 V53 1 0x0 MHR54 V54 1 0x0 MHR55 V55 1"
+RUN	PICK_UP_STG
+
+// Rung RECV_STG#16
+// Offset 107
+STRGT	D172	0
+CALL	Reset_SR	0x1	DST511	"3"	"3"
+
+// Rung RECV_STG#17
+// Offset 118
+STR	C206
+AND	C175
+ANDNE	D211	D218
+ANDN	C217
+ANDN	C6
+RUN	PICK_UP_STG
+
+// Rung RECV_STG#18
+// Offset 128
+STR	C567
+JMP	RECV_STG.S6
+
+// Rung RECV_STG#19
+// Offset 130
+STR	C213
+JMP	RECV_STG.S2
+
+// Rung RECV_STG#20
+// Offset 132
+SG	RECV_STG.S2
+
+// Rung RECV_STG#21
+// Offset 134
+STR	ST1
+MATH	D172	"CT0.Acc + 1"
+
+// Rung RECV_STG#22
+// Offset 143
+STRGT	D172	0
+RST	C213
+JMP	RECV_STG.S3
+
+// Rung RECV_STG#23
+// Offset 149
+SG	RECV_STG.S3
+
+// Rung RECV_STG#24
+// Offset 151
+STR	ST1
+JMP	RECV_STG.S0
+
+// Rung RECV_STG#25
+// Offset 153
+STR	C141
+AND	X989
+JMP	RECV_STG.S0
+
+// End of Code Block RECV_STG
+$PGMEND	RECV_STG
+
+// Beginning of Code Block True_Calib_STG
+$PRGRM	True_Calib_STG
+
+// Rung True_Calib_STG#1
+// Offset 0
+SG	True_Calib_STG.S0
+
+// Rung True_Calib_STG#2
+// Offset 2
+STR	ST1
+SET	C250
+
+// Rung True_Calib_STG#3
+// Offset 4
+STR	C250
+JMP	True_Calib_STG.S1
+
+// Rung True_Calib_STG#4
+// Offset 6
+SG	True_Calib_STG.S1
+
+// Rung True_Calib_STG#5
+// Offset 8
+STR	ST1
+CALL	Z_Hom	0x1	DST511	"3"	"3"
+
+// Rung True_Calib_STG#6
+// Offset 16
+STR	C113
+CALL	X1_Hom	0x1	DST511	"3"	"3"
+CALL	X2_Hom	0x1	DST511	"3"	"3"
+CALL	Y_Hom	0x1	DST511	"3"	"3"
+
+// Rung True_Calib_STG#7
+// Offset 38
+STR	C113
+AND	C93
+AND	C53
+AND	C73
+JMP	True_Calib_STG.S2
+
+// Rung True_Calib_STG#8
+// Offset 43
+SG	True_Calib_STG.S2
+
+// Rung True_Calib_STG#9
+// Offset 45
+STR	C93
+AND	C250
+ONDTMR	T4	1000	C256
+
+// Rung True_Calib_STG#10
+// Offset 50
+STR	C93
+AND	C250
+AND	C53
+AND	C667
+AND	C960
+CALL	Z_Calibration	0x1	DST511	"3"	"3"
+
+// Rung True_Calib_STG#11
+// Offset 62
+STR	C93
+AND	C53
+AND	C250
+CALL	Z_Calibration	0x1	DST511	"3"	"3"
+
+// Rung True_Calib_STG#12
+// Offset 72
+STR	C114
+AND	C250
+AND	C93
+AND	C53
+AND	C73
+CALL	Y_Calibration	0x1	DST511	"3"	"3"
+
+// Rung True_Calib_STG#13
+// Offset 84
+STR	C94
+AND	C250
+AND	C53
+AND	C73
+CALL	X_Calibration	0x1	DST511	"3"	"3"
+
+// Rung True_Calib_STG#14
+// Offset 95
+STR	C54
+AND	C74
+AND	C94
+OUT	C251
+
+// Rung True_Calib_STG#15
+// Offset 99
+STR	C251
+JMP	True_Calib_STG.S3
+
+// Rung True_Calib_STG#16
+// Offset 101
+SG	True_Calib_STG.S3
+
+// Rung True_Calib_STG#17
+// Offset 103
+STR	ST1
+CALL	Z_Homm	0x1	DST511	"3"	"3"
+
+// Rung True_Calib_STG#18
+// Offset 111
+STR	C118
+CALL	Y_Homm	0x1	DST511	"3"	"3"
+RST	Y8
+RST	Y9
+
+// Rung True_Calib_STG#19
+// Offset 121
+STR	C118
+CALL	X1_Homm	0x1	DST511	"3"	"3"
+CALL	X2_Homm	0x1	DST511	"3"	"3"
+
+// Rung True_Calib_STG#20
+// Offset 136
+STR	C250
+AND	C98
+AND	C58
+AND	C78
+AND	C118
+JMP	True_Calib_STG.S4
+
+// Rung True_Calib_STG#21
+// Offset 142
+SG	True_Calib_STG.S4
+
+// Rung True_Calib_STG#22
+// Offset 144
+STR	ST1
+SET	C252
+
+// Rung True_Calib_STG#23
+// Offset 146
+STR	ST1
+EXIT
+
+// End of Code Block True_Calib_STG
+$PGMEND	True_Calib_STG
+
+// Beginning of Code Block PICK_UP_STG
+$PRGRM	PICK_UP_STG
+
+// Rung PICK_UP_STG#1
+// Offset 0
+STR	ST1
+OUT	C211
+SET	C217
+
+// Rung PICK_UP_STG#2
+// Offset 3
+SG	PICK_UP_STG.S0
+
+// Rung PICK_UP_STG#3
+// Offset 5
+STR	C211
+JMP	PICK_UP_STG.S1
+
+// Rung PICK_UP_STG#4
+// Offset 7
+SG	PICK_UP_STG.S1
+
+// Rung PICK_UP_STG#5
+// Offset 9
+STR	ST1
+AND	C900
+AND	C906
+MATH	D118	"D41 * D134"
+MATH	D119	"D41 * D135"
+MATH	D173	"D41 * D135"
+COPY	0x1	"4 0x0 D118 D167 1 0x0 D119 D168 1"
+
+// Rung PICK_UP_STG#6
+// Offset 44
+STR	ST1
+ANDNE	D211	D218
+ANDN	C6
+COPY	0x1	"4 0x0 GntXOneCntArr[V50] D167 1 0x0 GntXTwoCntArr[V50] D168 1 0x0 GntYAxisMmArr[V51] D170 1 0x0 GntXOneCntArr[V50] D181 1 0x0 GntXTwoCntArr[V50] D182 1 0x0 GntXOneCntArr[V53] D184 1 0x0 GntXTwoCntArr[V53] D185 1 0x0 GntYAxisMmArr[V51] D187 1 0x0 GntYAxisMmArr[V54] D189 1"
+SET	C217
+RST	C218
+RST	C201
+RST	C213
+
+// Rung PICK_UP_STG#7
+// Offset 85
+STR	ST1
+AND	X11
+CALL	Z_Homm	0x1	DST511	"3"	"3"
+
+// Rung PICK_UP_STG#8
+// Offset 94
+STR	C113
+CALL	X_Mov	0x1	DST511	"3"	"3"
+
+// Rung PICK_UP_STG#9
+// Offset 102
+STR	C170
+OR	C171
+CALL	Y_Mov	0x1	DST511	"3"	"3"
+
+// Rung PICK_UP_STG#10
+// Offset 111
+STR	C172
+CALL	Z_Mov	0x1	DST511	"3"	"3"
+
+// Rung PICK_UP_STG#11
+// Offset 119
+STR	C173
+SET	C174
+JMP	PICK_UP_STG.S3
+
+// Rung PICK_UP_STG#12
+// Offset 122
+STR	C174
+AND	C455
+RST	C173
+JMP	PICK_UP_STG.S3
+
+// Rung PICK_UP_STG#13
+// Offset 126
+SG	PICK_UP_STG.S3
+
+// Rung PICK_UP_STG#14
+// Offset 128
+STR	C174
+OUT	C676
+
+// Rung PICK_UP_STG#15
+// Offset 130
+STR	C174
+SET	Y12
+
+// Rung PICK_UP_STG#16
+// Offset 132
+STR	Y12
+ONDTMR	T11	5000	C28
+
+// Rung PICK_UP_STG#17
+// Offset 136
+STR	T11.DN
+AND	C555
+CALL	Z_Homm	0x1	DST511	"3"	"3"
+
+// Rung PICK_UP_STG#18
+// Offset 145
+STR	T11.DN
+AND	Y12
+CALL	Z_Homm	0x1	DST511	"3"	"3"
+
+// Rung PICK_UP_STG#19
+// Offset 154
+STR	C130
+AND	C676
+AND	C777
+RST	Y12
+OUT	C212
+
+// Rung PICK_UP_STG#20
+// Offset 159
+STR	C212
+ANDE	Y12	0
+AND	C565
+JMP	PICK_UP_STG.S2
+
+// Rung PICK_UP_STG#21
+// Offset 166
+STR	C130
+SET	C212
+JMP	PICK_UP_STG.S2
+
+// Rung PICK_UP_STG#22
+// Offset 169
+SG	PICK_UP_STG.S2
+
+// Rung PICK_UP_STG#23
+// Offset 171
+STR	C212
+RUN	DROP_OFF_STG
+
+// Rung PICK_UP_STG#24
+// Offset 174
+STR	C140
+OUT	C213
+RST	C211
+
+// Rung PICK_UP_STG#25
+// Offset 177
+STR	C140
+JMP	PICK_UP_STG.S4
+
+// Rung PICK_UP_STG#26
+// Offset 179
+STR	C229
+EXIT
+
+// Rung PICK_UP_STG#27
+// Offset 181
+SG	PICK_UP_STG.S4
+
+// Rung PICK_UP_STG#28
+// Offset 183
+NOP
+
+// Rung PICK_UP_STG#29
+// Offset 184
+STR	C140
+AND	C567
+RST	Y12
+OUT	C212
+
+// Rung PICK_UP_STG#30
+// Offset 188
+STR	C140
+OUT	C212
+EXIT
+
+// End of Code Block PICK_UP_STG
+$PGMEND	PICK_UP_STG
+
+// Beginning of Code Block MOVE_STG
+$PRGRM	MOVE_STG
+
+// Rung MOVE_STG#1
+// Offset 0
+STR	ST1
+OUT	C39
+
+// Rung MOVE_STG#2
+// Offset 2
+SG	MOVE_STG.S0
+
+// Rung MOVE_STG#3
+// Offset 4
+STR	C39
+JMP	MOVE_STG.S1
+
+// Rung MOVE_STG#4
+// Offset 6
+SG	MOVE_STG.S1
+
+// Rung MOVE_STG#5
+// Offset 8
+STR	ST1
+OUT	C978
+
+// End of Code Block MOVE_STG
+$PGMEND	MOVE_STG
+
+// Beginning of Code Block DROP_OFF_STG
+$PRGRM	DROP_OFF_STG
+
+// Rung DROP_OFF_STG#1
+// Offset 0
+STR	ST1
+OUT	C139
+
+// Rung DROP_OFF_STG#2
+// Offset 2
+SG	DROP_OFF_STG.S0
+
+// Rung DROP_OFF_STG#3
+// Offset 4
+STR	ST1
+AND	X980
+AND	X970
+MATH	D118	"D43 * D134"
+MATH	D119	"D43 * D135"
+MATH	D173	"D41 * D135"
+COPY	0x1	"4 0x0 D118 D167 1 0x0 D119 D168 1"
+
+// Rung DROP_OFF_STG#4
+// Offset 39
+STR	ST1
+CALL	Z_Homm	0x1	DST511	"3"	"3"
+
+// Rung DROP_OFF_STG#5
+// Offset 47
+STRLE	$HSIO_003_CT4.Acc	C100
+AND	X980
+CALL	Z_Homm	0x1	DST511	"3"	"3"
+
+// Rung DROP_OFF_STG#6
+// Offset 59
+STR	C130
+AND	C100
+AND	C226
+CALL	X_Drp	0x1	DST511	"3"	"3"
+
+// Rung DROP_OFF_STG#7
+// Offset 69
+STR	C54
+AND	C74
+AND	C676
+AND	C980
+CALL	Y_Calibration	0x1	DST511	"3"	"3"
+
+// Rung DROP_OFF_STG#8
+// Offset 80
+STR	C54
+AND	C74
+AND	C908
+CALL	Y_Mov	0x1	DST511	"3"	"3"
+
+// Rung DROP_OFF_STG#9
+// Offset 90
+STR	C177
+OR	C178
+CALL	Y_Drp	0x1	DST511	"3"	"3"
+
+// Rung DROP_OFF_STG#10
+// Offset 99
+STR	C219
+OUT	C222
+
+// Rung DROP_OFF_STG#11
+// Offset 101
+STR	C222
+RST	C55
+RST	C75
+RST	C95
+ONDTMR	T15	1000	C260
+RST	C127
+
+// Rung DROP_OFF_STG#12
+// Offset 109
+STR	T15.Done
+JMP	DROP_OFF_STG.S1
+
+// Rung DROP_OFF_STG#13
+// Offset 111
+SG	DROP_OFF_STG.S1
+
+// Rung DROP_OFF_STG#14
+// Offset 113
+STR	ST1
+RST	Y11
+CALL	Z_Mov	0x1	DST511	"3"	"3"
+
+// Rung DROP_OFF_STG#15
+// Offset 122
+STR	C139
+AND	C127
+AND	C126
+RST	Y12
+SET	C229
+RST	C226
+
+// Rung DROP_OFF_STG#16
+// Offset 128
+STR	C229
+JMP	DROP_OFF_STG.S2
+
+// Rung DROP_OFF_STG#17
+// Offset 130
+SG	DROP_OFF_STG.S2
+
+// Rung DROP_OFF_STG#18
+// Offset 132
+STR	ST1
+CALL	Z_Homm	0x1	DST511	"3"	"3"
+
+// Rung DROP_OFF_STG#19
+// Offset 140
+STR	C226
+CALL	Y_Homm	0x1	DST511	"3"	"3"
+RST	Y8
+RST	Y9
+
+// Rung DROP_OFF_STG#20
+// Offset 150
+STR	C226
+AND	C225
+CALL	X1_Homm	0x1	DST511	"3"	"3"
+CALL	X2_Homm	0x1	DST511	"3"	"3"
+
+// Rung DROP_OFF_STG#21
+// Offset 166
+STR	C225
+AND	C223
+AND	C224
+AND	C226
+JMP	DROP_OFF_STG.S3
+
+// Rung DROP_OFF_STG#22
+// Offset 171
+SG	DROP_OFF_STG.S3
+
+// Rung DROP_OFF_STG#23
+// Offset 173
+STR	ST1
+SET	C218
+RST	C217
+RST	C98
+RST	C58
+RST	C78
+RST	C118
+RST	C113
+RST	C130
+
+// Rung DROP_OFF_STG#24
+// Offset 182
+STR	ST6
+MATH	D172	"D172 + 1"
+CALL	Reset_SR	0x1	DST511	"3"	"3"
+COPY	0x1	"4 0x0 D211 D218 1"
+EXIT
+
+// Rung DROP_OFF_STG#25
+// Offset 205
+STR	ST1
+COPY	0x1	"4 0x0 D211 D218 1"
+
+// Rung DROP_OFF_STG#26
+// Offset 212
+STR	ST5
+EXIT
+
+// End of Code Block DROP_OFF_STG
+$PGMEND	DROP_OFF_STG
+
+#BEGIN ELEMENT_DOC
+"X0","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","ESTOP","",""
+"X1","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","START","",""
+"X2","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","STOP","",""
+"X5","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","act_pulse","",""
+"X7","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z2_sw","",""
+"X8","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_sw","",""
+"X9","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_sw","",""
+"X10","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_sw","",""
+"X11","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_sw","",""
+"Y0","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","red","",""
+"Y1","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","blue","",""
+"Y2","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","white","",""
+"Y3","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","green","",""
+"Y4","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","yellow","",""
+"Y5","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","beep_sound","",""
+"Y6","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","gantry_light_24","",""
+"Y7","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","warning_light","",""
+"Y8","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dir_x1","",""
+"Y9","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dir_x2","",""
+"Y10","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dir_y","",""
+"Y11","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dir_z","",""
+"Y12","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pneu","",""
+"Y13","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","rst","",""
+"Y16","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pul_d1_x1","",""
+"Y17","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","ena_x1","",""
+"Y18","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pul_d2_x2","",""
+"Y19","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","ena_x2","",""
+"Y20","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pul_d3_y","",""
+"Y21","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","ena_y","",""
+"Y22","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pul_d4_z","",""
+"Y23","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","ena_z","",""
+"C0","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","counter","",""
+"C1","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","timer","",""
+"C2","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","start_pressed","",""
+"C3","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","currently_home","",""
+"C4","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y","",""
+"C5","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","motion_not_OK","",""
+"C6","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","fault","",""
+"C7","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","ESTOP_Latched","",""
+"C8","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","motion_Allowed","",""
+"C9","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","home2","",""
+"C10","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_reset","",""
+"C11","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_reset","",""
+"C12","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_reset","",""
+"C13","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","reset","",""
+"C14","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","need_home","",""
+"C15","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","success_modb","",""
+"C16","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","system_ready","",""
+"C17","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","start_stggg","",""
+"C18","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","hom_stggg","",""
+"C19","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","all_hom2_dn","",""
+"C20","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","homing_active","",""
+"C21","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","system_homed","",""
+"C22","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","axis_pose_valid","",""
+"C23","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","all_axis_active","",""
+"C24","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","any_axis_active","",""
+"C25","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","mode_home","",""
+"C26","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","mode_start","",""
+"C27","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","home_stg_dn","",""
+"C28","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pneu_tim_acc","",""
+"C30","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","at_home","",""
+"C31","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_active","",""
+"C32","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_active","",""
+"C33","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_active","",""
+"C34","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_active","",""
+"C35","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","curr_home_range","",""
+"C37","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","all_sys_homed","",""
+"C38","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","recv_stggg","",""
+"C39","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","move_stggg","",""
+"C40","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_home_range","",""
+"C41","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_ls_clear","",""
+"C42","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_run_jog","",""
+"C43","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_dir_fwd","",""
+"C44","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_dir_rev","",""
+"C45","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_less5","",""
+"C46","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_more5","",""
+"C47","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_homed","",""
+"C48","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_hit_cond_hom","",""
+"C49","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_hit_one_pulse","",""
+"C50","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_hit_cond_last","",""
+"C51","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_hom_cnt","",""
+"C52","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_near_home","",""
+"C53","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_home_dn","",""
+"C54","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_calib_dn","",""
+"C55","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_run_jog2","",""
+"C56","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_run_jog2_sw","",""
+"C57","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_hom_dnn","",""
+"C58","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_hom2_dn","",""
+"C59","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_not_allowed","",""
+"C60","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_home_range","",""
+"C61","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_ls_clear","",""
+"C62","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_run_jog","",""
+"C63","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_dir_fwd","",""
+"C64","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_dir_rev","",""
+"C65","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_less5","",""
+"C66","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_more5","",""
+"C67","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_homed","",""
+"C68","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_hit_cond_hom","",""
+"C69","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_hit_one_pulse","",""
+"C70","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_hit_cond_last","",""
+"C71","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_hom_cnt","",""
+"C72","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_near_home","",""
+"C73","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_home_dn","",""
+"C74","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_calib_dn","",""
+"C75","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_run_jog2","",""
+"C76","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_run_jog2_sw","",""
+"C77","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_hom_dnn","",""
+"C78","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_hom2_dn","",""
+"C79","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_not_allowed","",""
+"C80","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_home_range","",""
+"C81","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_ls_clear","",""
+"C82","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_run_jog","",""
+"C83","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_dir_fwd","",""
+"C84","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_dir_rev","",""
+"C85","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_less5","",""
+"C86","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_more5","",""
+"C87","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_homed","",""
+"C88","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_hit_cond_hom","",""
+"C89","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_hit_one_pulse","",""
+"C90","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_hit_cond_last","",""
+"C91","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_hom_cnt","",""
+"C92","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_near_home","",""
+"C93","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_home_dn","",""
+"C94","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_calib_dn","",""
+"C95","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_run_jog2","",""
+"C96","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_run_jog2_sw","",""
+"C97","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_hom_dnn","",""
+"C98","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_hom2_dn","",""
+"C99","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_not_allowed","",""
+"C100","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_home_range","",""
+"C101","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_ls_clear","",""
+"C102","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_run_jog","",""
+"C103","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_dir_fwd","",""
+"C104","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_dir_rev","",""
+"C105","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_less5","",""
+"C106","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_more5","",""
+"C107","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_homed","",""
+"C108","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_hit_cond_hom","",""
+"C109","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_hit_one_pulse","",""
+"C110","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_hit_con_last","",""
+"C111","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_hom_cnt","",""
+"C112","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_near_home","",""
+"C113","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_home_dn","",""
+"C114","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_calib_dn","",""
+"C115","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_run_jog2","",""
+"C116","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_run_jog2_sw","",""
+"C117","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_hom_dnn","",""
+"C118","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_hom2_dn","",""
+"C119","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_not_allowed","",""
+"C120","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_run_jog3_pick","",""
+"C121","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_run_jog3_pick","",""
+"C122","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_move","",""
+"C123","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_move","",""
+"C124","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_both_move","",""
+"C125","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_new_drop_dn","",""
+"C126","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_new_drop_dn","",""
+"C127","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_dropped_conta","",""
+"C130","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_picked_conta","",""
+"C131","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_run_jog3","",""
+"C132","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_not_allowed_2","",""
+"C133","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","recv_stg_dn","",""
+"C134","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","move_stg_dn","",""
+"C135","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pick_stg_dnnn","",""
+"C136","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","start_stg_dn","",""
+"C137","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_max_thresh_rea","",""
+"C138","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_run_jog4","",""
+"C139","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","drop_stg","",""
+"C140","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","drop_stg_dn","",""
+"C141","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","container_droped","",""
+"C142","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_forward","",""
+"C143","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_backward","",""
+"C144","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_run_jog5","",""
+"C145","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","estop_rev","",""
+"C150","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_forward","",""
+"C151","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_backward","",""
+"C152","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_forward","",""
+"C153","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_backward","",""
+"C160","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","calibrating","",""
+"C161","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","homing","",""
+"C162","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","plc_busy","",""
+"C164","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","picked_complete","",""
+"C170","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_new_loc_dn","",""
+"C171","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_new_loc_dn","",""
+"C172","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_new_loc_dn","",""
+"C173","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_new_loc_dn","",""
+"C174","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","all_new_loc_dn","",""
+"C175","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pi_hb_alive","",""
+"C176","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pi_one_sec_tick","",""
+"C177","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_drp_dn","",""
+"C178","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_drp_dn","",""
+"C200","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","at_hom","",""
+"C201","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","plc_ready","",""
+"C202","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","plc_moving","",""
+"C203","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","server_ready","",""
+"C204","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","demo_ready","",""
+"C205","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dav_ready","",""
+"C206","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","server_snd_move","",""
+"C207","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","ready_to_move","",""
+"C208","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","ext_node_conectd","",""
+"C209","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","samp_data","",""
+"C210","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","recved_frm_servr","",""
+"C211","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pick_stg","",""
+"C212","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pneu_dn","",""
+"C213","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pick_stg_dn","",""
+"C214","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pickup_done","",""
+"C215","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_done","",""
+"C216","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_y_rang_d","",""
+"C217","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","MOTION_BUSY","",""
+"C218","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","MOTION_DONE","",""
+"C219","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_drp_dn","",""
+"C220","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_run_forward","",""
+"C221","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_run_backward","",""
+"C222","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","all_drp_dn","",""
+"C223","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_hom3_dn","",""
+"C224","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_hom3_dn","",""
+"C225","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_hom3_dn","",""
+"C226","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_hom3_dn","",""
+"C227","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_hom4_dn","",""
+"C228","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","readyyy","",""
+"C229","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","drop_stg_dn2","",""
+"C250","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","true_calib_stggg","",""
+"C251","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","all_calib_dnn","",""
+"C252","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","true_calib_stg_d","",""
+"C261","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","t","",""
+"V50","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pickup_x_row","",""
+"V51","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pickup_y_row","",""
+"V52","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pickup_z_row","",""
+"V53","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_x_row","",""
+"V54","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_y_row","",""
+"V55","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_z_row","",""
+"N20","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pos_err_x12","",""
+"N40","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_max_val","",""
+"N60","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_max_val","",""
+"N80","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_max_val","",""
+"N100","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_max_val","",""
+"D1","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","Davis","",""
+"D20","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_pickup_loc_cn","",""
+"D21","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_pickup_loc_cn","",""
+"D22","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_pickup_loc_cn","",""
+"D23","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_pickup_loc_cn","",""
+"D24","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_pickup_loc_mm","",""
+"D25","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_pickup_loc_mm","",""
+"D26","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_pickup_loc_mm","",""
+"D27","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_pickup_loc_mm","",""
+"D28","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_dropof_loc_cn","",""
+"D29","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_dropof_loc_cn","",""
+"D30","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_dropof_loc_cn","",""
+"D31","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_dropof_loc_cn","",""
+"D32","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_dropof_loc_mm","",""
+"D33","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_dropof_loc_mm","",""
+"D34","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_dropof_loc_mm","",""
+"D35","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_dropof_loc_mm","",""
+"D40","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_pickup_loc_cn","",""
+"D41","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_pickup_loc_mm","",""
+"D42","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_dropof_loc_cn","",""
+"D43","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_dropof_loc_mm","",""
+"D100","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_cmd_mm","",""
+"D101","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_tab_mm","",""
+"D102","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_scale_cnt","",""
+"D103","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_scale_cnt","",""
+"D104","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_targ_mm","",""
+"D105","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_targ_mm","",""
+"D106","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_mm","",""
+"D107","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_mm","",""
+"D108","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_actual_mm","",""
+"D109","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_actual_mm","",""
+"D110","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_skew_mm","",""
+"D111","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_sync_fault","",""
+"D112","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_actual_cnt","",""
+"D113","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_actual_cnt","",""
+"D114","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_full_cnt","",""
+"D115","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_full_cnt","",""
+"D116","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_hom_calib_val","",""
+"D117","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_hom_calib_val","",""
+"D118","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_targ_cnt","",""
+"D119","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_targ_cnt","",""
+"D120","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_hom_calib_val","",""
+"D121","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_hom_calib_val","",""
+"D130","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_converted_val","",""
+"D131","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_converted_val","",""
+"D132","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_converted_val","",""
+"D133","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_converted_val","",""
+"D134","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_scale_const","",""
+"D135","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_scale_const","",""
+"D136","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_scale_const","",""
+"D137","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_scale_const","",""
+"D150","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_ctr_acc","",""
+"D151","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_ctr_acc","",""
+"D152","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_ctr_acc","",""
+"D153","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_ctr_acc","",""
+"D154","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_targ_calib","",""
+"D155","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_targ_calib","",""
+"D156","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_targ_calib","",""
+"D157","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_targ_calib","",""
+"D158","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_hom_calib","",""
+"D159","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_hom_calib","",""
+"D160","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_hom_calib","",""
+"D161","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_hom_calib","",""
+"D162","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pos_errr_x12","",""
+"D163","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_max_vall","",""
+"D164","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_max_vall","",""
+"D165","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_max_vall","",""
+"D166","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_max_vall","",""
+"D167","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_new_targ_loc","",""
+"D168","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_new_targ_loc","",""
+"D169","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x_new_targ_loc","",""
+"D170","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_new_targ_loc","",""
+"D171","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_new_targ_loc","",""
+"D172","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropped_count","",""
+"D173","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_targ_cnt","",""
+"D180","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pickup_X_mm","",""
+"D181","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pickup_X1_cnt","",""
+"D182","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pickup_X2_cnt","",""
+"D183","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_X_mm","",""
+"D184","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_X1_cnt","",""
+"D185","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_X2_cnt","",""
+"D186","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pickup_Y_mm","",""
+"D187","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pickup_Y_cnt","",""
+"D188","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_Y_mm","",""
+"D189","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_Y_cnt","",""
+"D190","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","server_readyyy","",""
+"D191","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","plc_readyyy","",""
+"D195","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pi_heartbeat","",""
+"D196","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","plc_heartbeat","",""
+"D198","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pi_hb_cnt","",""
+"D199","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","pi_hb_last_saved","",""
+"D200","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_targ_1_cnt","",""
+"D201","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_targ_2_cnt","",""
+"D202","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_targ_3_cnt","",""
+"D203","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_up","",""
+"D204","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_down","",""
+"D205","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","dropoff_y_range","",""
+"D211","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","CMD_ID_REG","",""
+"D212","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","START_CMD_REG","",""
+"D213","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","ACK_ID_REG","",""
+"D214","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","SERVER_READY_REG","",""
+"D215","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","PLC_READY_REG","",""
+"D216","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","MOVE_REQUEST_REG","",""
+"D217","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","MOVE_DONE_REG","",""
+"D218","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","LAST_CMD_ID","",""
+"D219","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_drp_range","",""
+"D220","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_drp_range","",""
+"D221","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_drp_range","",""
+"D222","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_drp_low_range","",""
+"D223","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","y_drp_high_range","",""
+"D224","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_drp_low_range","",""
+"D225","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_drp_low_range","",""
+"D226","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x1_drp_high_rang","",""
+"D227","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","x2_drp_high_rang","",""
+"D228","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_drp_low_range","",""
+"D229","FLAGS = REST_READONLY SPARK_DISABLED OPCUA_DISABLED","z_drp_high_range","",""
+"T0","FLAGS = REST_READONLY OPCUA_DISABLED","Cdowntimer_toS1","",""
+"T1","FLAGS = REST_READONLY OPCUA_DISABLED","timer1","",""
+"T2","FLAGS = REST_READONLY OPCUA_DISABLED","timer2","",""
+"T3","FLAGS = REST_READONLY OPCUA_DISABLED","TimerOnD_1","",""
+"T11","FLAGS = REST_READONLY OPCUA_DISABLED","pneu_suction_tm","",""
+"CT0","FLAGS = REST_READONLY OPCUA_DISABLED","Counter1","",""
+"$HSIO_003_CT1","FLAGS = REST_READONLY OPCUA_DISABLED","x1_ctr","",""
+"$HSIO_003_CT2","FLAGS = REST_READONLY OPCUA_DISABLED","x2_ctr","",""
+"$HSIO_003_CT3","FLAGS = REST_READONLY OPCUA_DISABLED","y_ctr","",""
+"$HSIO_003_CT4","FLAGS = REST_READONLY OPCUA_DISABLED","z_ctr","",""
+"UD0","FLAGS =","_aHSIO_001_PWM1","","@HSIO_001_PWM1"
+"US0","FLAGS =","_sHSIO_001_PWM1","","$HSIO_001_PWM1"
+"UN0","FLAGS =","_sHSIOyCycle_A","","$HSIO_001_PWM1.DutyCycle"
+"UN1","FLAGS =","_sHSIOPeriod_A","","$HSIO_001_PWM1.Period"
+"UB0","FLAGS =","_sHSIOOutput_A","","$HSIO_001_PWM1.EnableOutput"
+"UB1","FLAGS =","_sHSIOdScale_A","","$HSIO_001_PWM1.PeriodScale"
+#END
+

@@ -1,0 +1,17 @@
+# Source container - both ends (gridfinity 4x1x1, integer grid units)
+int32 src_x1
+int32 src_y1
+int32 src_z1
+int32 src_x2
+int32 src_y2
+int32 src_z2
+# Destination container - both ends
+int32 dst_x1
+int32 dst_y1
+int32 dst_z1
+int32 dst_x2
+int32 dst_y2
+int32 dst_z2
+---
+bool success
+string message

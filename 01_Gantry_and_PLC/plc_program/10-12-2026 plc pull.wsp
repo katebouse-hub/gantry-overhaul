@@ -1,0 +1,48 @@
+[VERSION]
+APIVERSION=(100)
+VERSION=(2,11,2,75)
+[FRAME]
+PLACEMENT=(44,2,3,-1,-1,-1,-1,26,26,1306,761)
+FRAME DATA=(1,1,0,0)
+[FRAME DATA]
+1=(44,0,1,-1,-1,-8,-31,26,26,875,407)
+2=(44,0,1,-1,-1,-8,-31,52,52,901,433)
+3=(44,0,1,-1,-1,-8,-31,78,78,923,433)
+4=(44,0,1,-1,-1,-8,-31,130,130,1314,681)
+5=(44,2,3,-1,-1,-8,-31,104,104,1288,655)
+6=(44,0,1,-1,-1,-1,-1,0,23,255,813)
+7=(44,0,1,-1,-1,-1,-1,0,0,0,0)
+[FRAME TYPES]
+1=20
+2=24
+3=3
+4=3
+5=3
+6=14
+7=21
+[Ladder Views]
+F3V1=(95,1,0,7,16,5,1,1,1,0,0)
+F4V1=(95,1,0,7,16,5,1,1,1,0,0)
+F5V1=(95,2,0,7,16,5,1,1,1,0,1)
+[Ladder Frame 3]
+Ladder View 1z=(0,0,808,312)
+ModuleSegment=6
+[Ladder Frame 4]
+Ladder View 1z=(0,0,1147,508)
+ModuleSegment=47
+[Ladder Frame 5]
+Ladder View 1z=(0,0,1423,807)
+ModuleSegment=19
+[TAB INFO]
+Tab0=20,Start Page
+Tab1=24,Dashboard
+Tab2=3,$Main
+Tab3=3,Move_to_Position
+Tab4=3,DROP_OFF_STG
+[DOCKPANE TO FRAME XREF]
+Project Browser`6852=6
+Launchpad`6855=7
+[DISPLAY MODE]
+DoMDIRestore=0
+[SYSTEM NAME]
+System Name=LAPPY

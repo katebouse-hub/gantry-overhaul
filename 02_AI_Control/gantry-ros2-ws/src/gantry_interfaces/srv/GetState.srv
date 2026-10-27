@@ -1,0 +1,5 @@
+# Empty request - fetch full active state
+---
+bool success
+string state_json
+string message

@@ -1,0 +1,16 @@
+import { ollama } from "ollama-ai-provider-v2";
+import { Agent } from "@mastra/core/agent";
+import { testMcpClient } from "../mcp/test-mcp-client";
+
+export const qwen3_35b = new Agent({
+  id: "qwen35_35b",
+  name: "qwen3.5:35b",
+  description: "You are a helpful assistant.",
+  instructions: `You are a helpful assistant that has access to the following MCP Servers.
+      - Mastra Ai Documentation
+      - Grep App Search Tool (Github)
+
+      Answer questions using the information you find using the MCP Servers when appropriate.`,
+  model: ollama("qwen3.5:35b"),
+  tools: await testMcpClient.listTools(),
+});

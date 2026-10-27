@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DockingPaneLayouts CompactMode="1">
+	<DSP_PANE_SECTION>
+		<Summary Panes="7" TopContainer="3" Client="7"/>
+		<Pane-1 Type="0" DockingCX="255" DockingCY="200" Title="Project Browser\n\n" ID="6852" DockingHolder="5" LastHolder="5"/>
+		<Pane-2 Type="0" DockingCX="275" DockingCY="286" Title="Launchpad\n\n" ID="6855" DockingHolder="5" LastHolder="5"/>
+		<Pane-3 Type="2" Horiz="1" Panes="2" Pane-1="4" Pane-2="6"/>
+		<Pane-4 Type="2" DockingCX="255" DockingCY="200" Panes="1" Pane-1="5"/>
+		<Pane-5 Type="1" DockingCX="275" DockingCY="286" Panes="2" Selected="1" Pane-1="2" Pane-2="1"/>
+		<Pane-6 Type="2" DockingCX="1448" Panes="1" Pane-1="7"/>
+		<Pane-7 Type="4" DockingCY="633"/>
+	</DSP_PANE_SECTION>
+</DockingPaneLayouts>

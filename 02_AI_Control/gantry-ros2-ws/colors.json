@@ -1,0 +1,193 @@
+{
+  "notes": "Grid 27x20. x=1-27 vertical (x=1 near gantry), y=1-20 horizontal. Red zone is 3x5 sections. All other sections are 5x5 except x=24-27 which is 4x5 (partial, removed from far end to fit frame).",
+  "zones": {
+    "red": {
+      "sections": [
+        {
+          "id": "R1",
+          "x_min": 1,
+          "x_max": 3,
+          "y_min": 1,
+          "y_max": 5
+        },
+        {
+          "id": "R2",
+          "x_min": 1,
+          "x_max": 3,
+          "y_min": 6,
+          "y_max": 10
+        },
+        {
+          "id": "R3",
+          "x_min": 1,
+          "x_max": 3,
+          "y_min": 11,
+          "y_max": 15
+        },
+        {
+          "id": "R4",
+          "x_min": 1,
+          "x_max": 3,
+          "y_min": 16,
+          "y_max": 20
+        }
+      ]
+    },
+    "blue": {
+      "sections": [
+        {
+          "id": "S01",
+          "x_min": 4,
+          "x_max": 8,
+          "y_min": 1,
+          "y_max": 5
+        },
+        {
+          "id": "S02",
+          "x_min": 4,
+          "x_max": 8,
+          "y_min": 6,
+          "y_max": 10
+        },
+        {
+          "id": "S03",
+          "x_min": 4,
+          "x_max": 8,
+          "y_min": 11,
+          "y_max": 15
+        },
+        {
+          "id": "S04",
+          "x_min": 4,
+          "x_max": 8,
+          "y_min": 16,
+          "y_max": 20
+        },
+        {
+          "id": "S05",
+          "x_min": 9,
+          "x_max": 13,
+          "y_min": 1,
+          "y_max": 5
+        }
+      ]
+    },
+    "orange": {
+      "sections": [
+        {
+          "id": "S06",
+          "x_min": 9,
+          "x_max": 13,
+          "y_min": 6,
+          "y_max": 10
+        },
+        {
+          "id": "S07",
+          "x_min": 9,
+          "x_max": 13,
+          "y_min": 11,
+          "y_max": 15
+        },
+        {
+          "id": "S08",
+          "x_min": 9,
+          "x_max": 13,
+          "y_min": 16,
+          "y_max": 20
+        },
+        {
+          "id": "S10",
+          "x_min": 14,
+          "x_max": 18,
+          "y_min": 6,
+          "y_max": 10
+        },
+        {
+          "id": "S12",
+          "x_min": 14,
+          "x_max": 18,
+          "y_min": 16,
+          "y_max": 20
+        }
+      ]
+    },
+    "yellow": {
+      "sections": [
+        {
+          "id": "S09",
+          "x_min": 14,
+          "x_max": 18,
+          "y_min": 1,
+          "y_max": 5
+        },
+        {
+          "id": "S13",
+          "x_min": 19,
+          "x_max": 23,
+          "y_min": 1,
+          "y_max": 5
+        },
+        {
+          "id": "S14",
+          "x_min": 19,
+          "x_max": 23,
+          "y_min": 6,
+          "y_max": 10
+        },
+        {
+          "id": "S17",
+          "x_min": 24,
+          "x_max": 27,
+          "y_min": 1,
+          "y_max": 5
+        },
+        {
+          "id": "S18",
+          "x_min": 24,
+          "x_max": 27,
+          "y_min": 6,
+          "y_max": 10
+        }
+      ]
+    },
+    "black": {
+      "sections": [
+        {
+          "id": "S11",
+          "x_min": 14,
+          "x_max": 18,
+          "y_min": 11,
+          "y_max": 15
+        },
+        {
+          "id": "S15",
+          "x_min": 19,
+          "x_max": 23,
+          "y_min": 11,
+          "y_max": 15
+        },
+        {
+          "id": "S16",
+          "x_min": 19,
+          "x_max": 23,
+          "y_min": 16,
+          "y_max": 20
+        },
+        {
+          "id": "S19",
+          "x_min": 24,
+          "x_max": 27,
+          "y_min": 11,
+          "y_max": 15
+        },
+        {
+          "id": "S20",
+          "x_min": 24,
+          "x_max": 27,
+          "y_min": 16,
+          "y_max": 20
+        }
+      ]
+    }
+  }
+}

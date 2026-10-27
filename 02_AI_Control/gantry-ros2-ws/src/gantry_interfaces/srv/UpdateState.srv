@@ -1,0 +1,16 @@
+# Find container at source position and move it to destination in active_pos.json
+int32 src_x1
+int32 src_y1
+int32 src_z1
+int32 src_x2
+int32 src_y2
+int32 src_z2
+int32 dst_x1
+int32 dst_y1
+int32 dst_z1
+int32 dst_x2
+int32 dst_y2
+int32 dst_z2
+---
+bool success
+string message
